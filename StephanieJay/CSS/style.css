@@ -144,9 +144,9 @@ a:hover { color:#b9e753; }
 .vb-desc { width:200px; margin-left:49px; text-align:center; margin-top:15px; height:80px; font-size:14px; text-shadow:0px 0px 3px #000; }
 .vb-views { font-size:12px; color:#9c9d9c; margin-top:8px; }
 #vb-controller { padding:0px 15px 0px 15px; }
-#vb-arrow-left { width:40px; height:40px; background-image:url(../images/arrow1-left.png); display:block; float:left; } 
+#vb-arrow-left { width:40px; height:40px; background-image:url(../images/Content/arrow1-left.png); display:block; float:left; } 
 #vb-arrow-left:hover { background-position:0 -40px; }
-#vb-arrow-right { width:40px; height:40px; background-image:url(../images/arrow1-right.png); display:block; float:left; } 
+#vb-arrow-right { width:40px; height:40px; background-image:url(../images/Content/arrow1-right.png); display:block; float:left; } 
 #vb-arrow-right:hover { background-position:0 -40px; }
 .mid-videos { height:355px; overflow:hidden; }
 
@@ -249,22 +249,22 @@ a:hover { color:#b9e753; }
 .invisi-box { background:none; border:none; height:32px; width:250px; color:#CCC; padding-left:5px; padding-right:5px; margin-bottom:10px; }
 
 
-#slider { width:100%; overflow:hidden; height:372px; background-image:url(../images/slider-bg.png); margin-bottom:25px; }
+#slider { width:100%; overflow:hidden; height:372px; background-image:url(../images/Content/slider-bg.png); margin-bottom:25px; }
 #slider-container { height:352px; width:950px; margin:auto; padding-top:10px; position:relative; }
 #slider-inner { width:10000px; height:352px; position:absolute; top:10px; left:-970px; }
 .slide { width:938px; height:340px; border:6px solid #000; float:left; margin-right:20px; }
 
-#slider-arrow-left { display:block; width:115px; height:124px; background-image:url(../images/large-arrow-left.png); position:absolute; left:-53px; top:120px; z-index:999; } #slider-arrow-left:hover { background-position:0 -124px; }
-#slider-arrow-right { display:block; width:115px; height:124px; background-image:url(../images/large-arrow-right.png); position:absolute; right:-53px; top:120px; z-index:999; } #slider-arrow-right:hover { background-position:0 -124px; }
-#slider-fade-left { display:block; height:372px; width:300px; background-image:url(../images/slider-fade-left.png); position:absolute; left:-320px; top:0px; z-index:2; }
+#slider-arrow-left { display:block; width:115px; height:124px; background-image:url(../images/Content/large-arrow-left.png); position:absolute; left:-53px; top:120px; z-index:999; } #slider-arrow-left:hover { background-position:0 -124px; }
+#slider-arrow-right { display:block; width:115px; height:124px; background-image:url(../images/Content/large-arrow-right.png); position:absolute; right:-53px; top:120px; z-index:999; } #slider-arrow-right:hover { background-position:0 -124px; }
+#slider-fade-left { display:block; height:372px; width:300px; background-image:url(../images/Content/slider-fade-left.png); position:absolute; left:-320px; top:0px; z-index:2; }
 #slider-fade-left:hover { opacity:0.92; }
-#slider-fade-right { display:block; height:372px; width:300px; background-image:url(../images/slider-fade-right.png); position:absolute; right:-320px; top:0px; z-index:2; }
+#slider-fade-right { display:block; height:372px; width:300px; background-image:url(../images/Content/slider-fade-right.png); position:absolute; right:-320px; top:0px; z-index:2; }
 #slider-fade-right:hover { opacity:0.92; }
 #slider-black-left { height:372px; width:1000px; position:absolute; top:0px; left:-1300px; background-color:#0c100f; }
 #slider-black-right { height:372px; width:1000px; position:absolute; top:0px; right:-1300px; background-color:#0c100f; }
 
 #hearts { position:absolute; top:20px; right:10px; }
-.heart { display:block; height:18px; width:21px; background-image:url(../images/heart.png); float:left; margin-right:6px; }
+.heart { display:block; height:18px; width:21px; background-image:url(../images/Content/heart.png); float:left; margin-right:6px; }
 .heart-active { background-position:0 -18px; } 
 
 #thanks { font-size:22px; width:910px; text-align:center; font-weight:bold; margin-top:20px; }
