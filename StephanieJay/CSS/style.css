@@ -59,7 +59,13 @@ a:hover { color:#b9e753; }
 .wrapper { width:950px; margin:auto; padding:0px 20px 0px 20px; }
 
 #logo { height:150px; border-bottom:1px #888888 solid; background:url(../Images/Content/logo.png) no-repeat center; margin-top:45px; display:block; }
-#nav { height:40px; margin-left:73px; }
+
+
+#nav { height:40px; text-align:center; }
+#nav a { display:inline-block; width:40px; padding-left:10px; padding-right:10px; }
+
+
+
 #nav a span { display:block; height:40px; float:left; margin-right:19px; }
 #nav a span:hover { background-position:0 40px; }
 #nav-news { width:61px; background-image:url(../images/nav/news.png); }
@@ -71,6 +77,8 @@ a:hover { color:#b9e753; }
 #nav-buy-stuff { width:111px; background-image:url(../images/nav/buy-stuff.png); }
 #nav-connect { width:91px; background-image:url(../images/nav/connect.png); }
 #nav-mau5mail { width:101px; background-image:url(../images/nav/mau5mail.png); }
+
+
 
 .ghost { background:none; }
 .ghost:hover { background-color:rgba(255,255,255,0.02); }
