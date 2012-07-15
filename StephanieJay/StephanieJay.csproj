@@ -62,7 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BioController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
+    <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MixesController.cs" />
+    <Compile Include="Controllers\VenuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -101,8 +107,19 @@
     <Content Include="CSS\bootstrap.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Content\arrow1-left.png" />
+    <Content Include="Images\Content\arrow1-right.png" />
     <Content Include="Images\Content\bg.jpg" />
+    <Content Include="Images\Content\heart.png" />
+    <Content Include="Images\Content\large-arrow-left.png" />
+    <Content Include="Images\Content\large-arrow-right.png" />
     <Content Include="Images\Content\logo.png" />
+    <Content Include="Images\Content\slide-1.jpg" />
+    <Content Include="Images\Content\slide-2.jpg" />
+    <Content Include="Images\Content\slide-3.jpg" />
+    <Content Include="Images\Content\slider-bg.png" />
+    <Content Include="Images\Content\slider-fade-left.png" />
+    <Content Include="Images\Content\slider-fade-right.png" />
     <Content Include="Images\Icons\glyphicons-halflings.png" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
@@ -116,6 +133,7 @@
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Scripts\stratus.js" />
+    <Content Include="Scripts\ultimate.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -144,12 +162,31 @@
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="XML\News.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Gallery\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Mixes\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Bio\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Gigs\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Contact\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Venues\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

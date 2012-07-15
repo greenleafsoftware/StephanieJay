@@ -25,50 +25,19 @@
         <div class="wrapper">
             <div id="nav">
                 @Html.ActionLink("Home", "Index", "Home")
-                @Html.ActionLink("Gigs", "Gigs", "Gigs")
-                @Html.ActionLink("Gallery", "Gallery", "Gallery")
-                @Html.ActionLink("Mixes", "Mixes", "Mixes")
-                @Html.ActionLink("Bio", "Bio", "Bio")
-                @Html.ActionLink("Contact", "Contact", "Contact")
-                @Html.ActionLink("Venues", "Venues", "Venues")
+                @Html.ActionLink("Gigs", "Index", "Gigs")
+                @Html.ActionLink("Gallery", "Index", "Gallery")
+                @Html.ActionLink("Mixes", "Index", "Mixes")
+                @Html.ActionLink("Bio", "Index", "Bio")
+                @Html.ActionLink("Contact", "Index", "Contact")
+                @Html.ActionLink("Venues", "Index", "Venues")
             </div>
         </div>
-        <div id="slider">
-            <div id="slider-container">
-                <div id="slider-inner">
-                    <div class="slide">
-                        <a target="_blank" href="#"><img alt="StephanieJay Slide" src="../../Images/Content/slide-1.jpg" /></a></div>
-                    <div class="slide">
-                        <a target="_blank" href="#"><img alt="StephanieJay Slide" src="../../Images/Content/slide-3.jpg" /></a></div>
-                    <div class="slide">
-                        <a target="_blank" href="#"><img alt="StephanieJay Slide" src="../../Images/Content/slide-2.jpg" /></a>                        </div>
-                    <div class="slide">
-                        <a target="_blank" href="#"><img alt="StephanieJay Slide" src="../../Images/Content/slide-1.jpg" /></a>                        </div>
-                    <div class="slide">
-                        <a target="_blank" href="#"><img alt="StephanieJay Slide" src="../../Images/Content/slide-1.jpg" /></a>                        </div>
-                    <div class="slide">
-                        <a target="_blank" href="#"><img alt="StephanieJay Slide" src="../../Images/Content/slide-1.jpg" /></a>                        </div>
-                </div>
-                <a href="#" id="slide-left"><span id="slider-arrow-left"></span></a>
-                <a href="#" id="slide-right"><span id="slider-arrow-right"></span></a>
-                <a href="#" id="slide-left-fade"><span id="slider-fade-left"></span></a>
-                <a href="#" id="slide-right-fade"><span id="slider-fade-right"></span></a>
-                <div id="slider-black-left"></div>
-                <div id="slider-black-right"></div>
-                <div id="hearts">
-                    <a href="#" id="heart1"><span class="heart heart-active"></span></a>
-                    <a href="#" id="heart2"><span class="heart"></span></a>
-                    <a href="#" id="heart3"><span class="heart"></span></a>
-                    <a href="#" id="heart4"><span class="heart"></span></a>
-                </div>
-            </div>
-        </div>
+        @RenderBody()
         <div id="logindisplay">
             @Html.Partial("_LogOnPartial")
         </div>
-        <div id="main">
-            @RenderBody()
-        </div>
+
         <div>
             <div id="footer"></div>
         </div>

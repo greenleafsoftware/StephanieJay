@@ -6,18 +6,15 @@ using System.Web.Mvc;
 
 namespace StephanieJay.Controllers
 {
-    public class HomeController : Controller
+    public class BioController : Controller
     {
+        //
+        // GET: /Bio/
+
         public ActionResult Index()
         {
-            //ViewBag.Message = "Welcome to ASP.NET MVC!";
-
             return View();
         }
 
-        public ActionResult About()
-        {
-            return View();
-        }
     }
 }
