@@ -104,7 +104,7 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="CSS\bootstrap-responsive.css" />
-    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\Content\arrow1-left.png" />
@@ -121,6 +121,7 @@
     <Content Include="Images\Content\slider-fade-left.png" />
     <Content Include="Images\Content\slider-fade-right.png" />
     <Content Include="Images\Icons\glyphicons-halflings.png" />
+    <Content Include="Scripts\bootstrap-carousel.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
@@ -156,7 +157,6 @@
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
