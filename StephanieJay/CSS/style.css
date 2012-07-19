@@ -57,10 +57,11 @@ a:hover { color:white; }
 .left { float:left; }
 .right { float:right; }
 
+
 #loading { width:32px; height:32px; position:absolute; top:100px; left:100px; z-index:999; display:none; }
 
 
-/*#bg { background:#090d0c url(../Images/Content/bg.jpg) no-repeat center top; width:100%; display:table; }*/
+#bg { background:#090d0c url(../Images/Content/bg2.jpg) no-repeat center top; width:100%; display:table; }
 .wrapper { width:950px; margin:auto; padding:0px 20px 0px 20px; }
 #logo { height:150px; border-bottom:1px #888888 solid; background:url(../Images/Content/logo.png) no-repeat center; margin-top:45px; display:block; }
 #nav { height:40px; text-align:center; }
@@ -75,6 +76,7 @@ a:hover { color:white; }
 .box .box-item { height: 80px; border-top: 1px solid #333; }   
 .box h2 { text-transform:uppercase; color:#7df; }
 .box h3 { color: #bbb; }
+
 /*.box h2 { background: url(../Images/Icons/heart-18x18.png) no-repeat top right; right:-10px; left:-10px }*/
 
 
