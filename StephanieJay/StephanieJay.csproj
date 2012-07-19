@@ -107,6 +107,11 @@
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Content\hed_kandi.jpg" />
+    <Content Include="Images\Content\hed_kandi2.jpg" />
+    <Content Include="Images\Content\hed_kandi3.jpg" />
+    <Content Include="Images\Content\stephanie_jay.jpg" />
+    <Content Include="Images\Icons\heart-18x18.png" />
     <Content Include="Images\Content\arrow1-left.png" />
     <Content Include="Images\Content\arrow1-right.png" />
     <Content Include="Images\Content\bg.jpg" />
@@ -123,11 +128,13 @@
     <Content Include="Images\Icons\glyphicons-halflings.png" />
     <Content Include="Scripts\bootstrap-carousel.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\cross.cufonfonts.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
     <Content Include="Scripts\jquery-1.5.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.dotdotdot-1.5.1.js" />
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -135,6 +142,7 @@
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Scripts\stratus.js" />
     <Content Include="Scripts\ultimate.js" />
+    <Content Include="Scripts\yanone-kaffeesatz.cufonfonts.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
