@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Bootstrap v2.0.4
  *
  * Copyright 2012 Twitter, Inc
@@ -706,6 +706,12 @@ a.thumbnail:hover{border-color:#0088cc;-webkit-box-shadow:0 1px 4px rgba(0, 105,
 .carousel-control:hover{color:#ffffff;text-decoration:none;opacity:0.9;filter:alpha(opacity=90);}
 .carousel-caption{position:absolute;left:0;right:0;bottom:0;padding:10px 15px 5px;background:#333333;background:rgba(0, 0, 0, 0.75);}
 .carousel-caption h4,.carousel-caption p{color:#ffffff;}
+.carousel.carousel-fade .item {-webkit-transition: opacity 2s ease-in-out;-moz-transition: opacity 2s ease-in-out;-ms-transition: opacity 2s ease-in-out;-o-transition: opacity 2s ease-in-out;transition: opacity 2s ease-in-out;}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {left: 0;z-index: 2;opacity: 0;filter: alpha(opacity=0);}
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {left: 0;z-index: 1;}
+.carousel.carousel-fade .carousel-control {z-index: 3;}​
 .well{min-height:20px;padding:19px;margin-bottom:20px;background-color:#f5f5f5;border:1px solid #eee;border:1px solid rgba(0, 0, 0, 0.05);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);}.well blockquote{border-color:#ddd;border-color:rgba(0, 0, 0, 0.15);}
 .well-large{padding:24px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
 .well-small{padding:9px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
