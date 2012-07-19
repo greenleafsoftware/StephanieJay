@@ -1,3 +1,11 @@
+#mainFlash 
+{
+    width:750px;
+    height:375px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 /* ============================================================
     Reset
 ============================================================ */
@@ -251,7 +259,7 @@ a:hover { color:white; }
 
 
 #slider { width:100%; overflow:hidden; height:372px; background-image:url(../Images/Content/slider-bg.png); margin-bottom:25px; }
-#slider-container { height:352px; width:950px; margin:auto; padding-top:10px; position:relative; }
+#slider-container { height:375px; width:750px; margin:auto; padding-top:10px; position:relative; }
 #slider-inner { width:10000px; height:352px; position:absolute; top:10px; left:-970px; }
 /*.slide { width:938px; height:340px; border:6px solid #000; float:left; margin-right:20px; }*/
 
