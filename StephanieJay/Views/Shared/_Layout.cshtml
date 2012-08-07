@@ -33,7 +33,7 @@
             $('.carousel').carousel({ interval: 2000 });
         });
 
-        Cufon.replace('.box h2, .box h3, #nav a', { fontFamily: 'Yanone Kaffeesatz Regular', hover: true });
+        Cufon.replace('.box h2, .box h3, .section h2, #nav a', { fontFamily: 'Yanone Kaffeesatz Regular', hover: true });
 
     </script>   
 </head>
@@ -65,7 +65,37 @@
     </div>
 
 
-    <div id="footer">footer</div>
+    <div id="footer">
+    <div class="container">
+    
+
+        <div class="row">
+            <div class="span6">
+                <div class="row">
+                    <div class="span2">
+                        <div class="section">
+                            <h2>Quick Links.</h2>
+                            <div class="item">@Html.ActionLink("Home", "Index", "Home")</div>
+                            <div class="item">@Html.ActionLink("Gigs", "Index", "Gigs")</div>
+                            <div class="item">@Html.ActionLink("Gallery", "Index", "Gallery")</div>
+                            <div class="item">@Html.ActionLink("Mixes", "Index", "Mixes")</div>
+                            <div class="item">@Html.ActionLink("Bio", "Index", "Bio")</div>
+                            <div class="item">@Html.ActionLink("Contact", "Index", "Contact")</div>
+                            <div class="item">@Html.ActionLink("Venues", "Index", "Venues")</div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                    </div>
+                </div>
+            </div>
+            <div class="span6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12"><div class="center">Copyright © 2012 Stephanie Jay</div></div>
+        </div>
+    </div>
+    </div>
 
 </body>
 </html>

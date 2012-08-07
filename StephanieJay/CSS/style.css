@@ -76,7 +76,12 @@ a:hover { color:white; }
 #nav a { display:inline-block; width:40px; padding-left:10px; padding-right:10px; line-height:40px; text-transform:uppercase; }
 
 
+.center { text-align: center; } 
+
 #footer { background-color:#000000; border-top:1px solid #292929; margin-top:30px; height:400px; }
+
+#footer .section { height: 400px; border-right: 1px solid #333;} 
+
 
 /*Content Box*/
 .box { background: #222; }
@@ -84,6 +89,12 @@ a:hover { color:white; }
 .box .box-item { height: 80px; border-top: 1px solid #333; }   
 .box h2 { text-transform:uppercase; color:#7df; }
 .box h3 { color: #bbb; }
+
+/*Section*/
+.section h2 { text-transform:uppercase; }
+.section item { }
+
+
 
 /*.box h2 { background: url(../Images/Icons/heart-18x18.png) no-repeat top right; right:-10px; left:-10px }*/
 
