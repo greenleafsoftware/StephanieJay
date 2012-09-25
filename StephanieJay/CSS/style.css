@@ -64,7 +64,7 @@ a:hover { color:white; }
 #main-content { background:#000 url(../Images/Content/bg-grill.jpg) no-repeat center top; width:100%; display:table; padding-top:20px; }
 #logo { height:150px; background:url(../Images/Content/logo.png) no-repeat center; margin-top:45px; display:block; }
 #nav-wrap { height:40px; background-color:#111; border-top:1px #333 solid; border-bottom:1px #333 solid; }
-#nav { width:950px; margin:0 auto; padding:0px 20px 0px 20px; text-align:center; }
+#nav { margin:0 auto; padding:0px 20px 0px 20px; text-align:center; }
 #nav a { display:inline-block; width:40px; padding-left:10px; padding-right:10px; line-height:40px; text-transform:uppercase; }
 
 .center { text-align: center; } 
