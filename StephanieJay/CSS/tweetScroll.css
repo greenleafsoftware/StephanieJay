@@ -1,0 +1,26 @@
+/* styling for the twitter feed scroll */
+.tweetContainer {
+    width: 300px;
+    height: 28.5em; /* total visible tweets, in this case set to 5 */ 
+    overflow: hidden; /*keep tweets outside of the container from being seen */
+    border: 1px solid red;
+}
+#tweetlist {
+    width: 300px;
+    position: relative;
+    list-style-type: none;
+    top: -6em; /* allows a tweet to be moved into hidden space before scrolling into view */
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid red;
+}
+.tweetImage {
+    float: left;
+    padding-right: 1em;
+}
+.tweet {
+    height: 6em;
+    padding-top: 0.3em;
+    font-size: 0.9em;
+    border-bottom: 1px solid #333333;
+}
