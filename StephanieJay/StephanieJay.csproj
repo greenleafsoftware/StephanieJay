@@ -107,6 +107,7 @@
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Content\bg-grill.jpg" />
     <Content Include="Images\Content\bg.png" />
     <Content Include="Images\Content\bg2.jpg" />
     <Content Include="Images\Content\hed_kandi.jpg" />

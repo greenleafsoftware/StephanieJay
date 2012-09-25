@@ -11,7 +11,7 @@
     <script src="@Url.Content("~/Scripts/stratus.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/ultimate.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/bootstrap-carousel.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/bootstrap-transition.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap-transition.js") type="text/javascript"></script>
     <script src="http://cufon.shoqolate.com/js/cufon-yui.js" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/yanone-kaffeesatz.cufonfonts.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.dotdotdot-1.5.1.js")" type="text/javascript"></script>
@@ -51,9 +51,8 @@
 </head>
 <body>
 
-    <div id="bg">
-
     <div id="logo"></div>
+
     <div class="wrapper">
         <div id="nav">
             @Html.ActionLink("Home", "Index", "Home")
@@ -65,15 +64,13 @@
             @Html.ActionLink("Venues", "Index", "Venues")
         </div>
     </div>
-
-    <div class="container">
-        @RenderBody()
-        <div id="logindisplay">
-            @Html.Partial("_LogOnPartial")
+    <div id="main2">
+        <div class="container">
+            @RenderBody()
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
         </div>
-    </div>
-
-
     </div>
 
 
