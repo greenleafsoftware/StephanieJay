@@ -38,7 +38,7 @@
                     /* put the last item before the first item */
                     $("#tweetlist li:first").before($("#tweetlist li:last"));
                     /* reset top position */
-                    $('#tweetlist').css({ 'top': '-6em' });
+                    $('#tweetlist').css({ 'top': -itemHeight });
                 });
             };
             /* make the carousel scroll automatically when the page loads */
@@ -52,7 +52,7 @@
                     tweetText = tweetText.replace(/http:\/\/\S+/g, '<a href="$&" target="_blank">$&</a>');
                     tweetText = tweetText.replace(/(@@)(\w+)/g, ' $1<a href="http://twitter.com/$2" target="_blank">$2</a>');
                     tweetText = tweetText.replace(/(#)(\w+)/g, ' $1<a href="http://search.twitter.com/search?q=%23$2" target="_blank">$2</a>');
-                    $('#tweetlist').append('<li class="tweet"><div class="tweetImage"><a href="http://twitter.com/' + tweeter + '" target="_blank"><img src="' + data.results[i].profile_image_url + '" width="48" border="0" /></a></div><div class="tweetBody">' + tweetText + '</div></li>');
+                    $('#tweetlist').append('<li class="tweet box-item"><div class="tweetImage"><a href="http://twitter.com/' + tweeter + '" target="_blank"><img src="' + data.results[i].profile_image_url + '" width="48" border="0" /></a></div><div class="tweetBody">' + tweetText + '</div></li>');
                 }
             });
 

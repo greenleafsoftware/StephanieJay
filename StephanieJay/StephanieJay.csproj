@@ -106,7 +106,6 @@
     <Content Include="CSS\bootstrap-responsive.css" />
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\style.css" />
-    <Content Include="CSS\tweetScroll.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\Content\bg-grill.jpg" />
     <Content Include="Images\Content\bg.png" />
