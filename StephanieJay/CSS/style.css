@@ -69,8 +69,8 @@ a:hover { color:white; }
 
 .center { text-align: center; } 
 
-#footer { background-color:#000000; border-top:1px solid #292929; margin-top:30px; height:400px; }
-#footer .section { height: 400px; border-right: 1px solid #333;} 
+#footer { background:#000 url(../Images/Content/equalizer.png) repeat-x center bottom; border-top:1px solid #292929; padding-top:30px; height:300px; }
+#footer .section {  height: 300px; border-right: 1px solid #333;} 
 
 /*Content Box*/
 .box { background: #222; margin-bottom: 20px; padding-left:10px; padding-top:10px; padding-right:10px; }
