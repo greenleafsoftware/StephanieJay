@@ -60,12 +60,12 @@
             $(".box .box-item").dotdotdot();
 
             /*Carousel*/
-            $('.carousel').carousel({ interval: 2000 });
+            $('.carousel').carousel({ interval: 10000 });
 
             /*News Feed*/
             $("#news").PaRSS(
                 'http://feeds.bbci.co.uk/news/rss.xml', // url to the feed
-                3, // number of items to retrieve
+                4, // number of items to retrieve
                 "M jS Y, g:i a", // date format
                 true, // include descriptions?
                 function () {
