@@ -120,6 +120,7 @@
     <Content Include="Images\Content\next.png" />
     <Content Include="Images\Content\prev.png" />
     <Content Include="Images\Content\stephanie_jay.jpg" />
+    <Content Include="Images\Icons\content-panel-icon.png" />
     <Content Include="Images\Icons\heart-18x18.png" />
     <Content Include="Images\Content\arrow1-left.png" />
     <Content Include="Images\Content\arrow1-right.png" />
