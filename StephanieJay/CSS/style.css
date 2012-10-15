@@ -61,7 +61,7 @@ a:hover { color:white; }
 
 #loading { width:32px; height:32px; position:absolute; top:100px; left:100px; z-index:999; display:none; }
 
-#main-content { background:#000 url(../Images/Content/bg-grill.jpg) no-repeat center top; width:100%; display:table; padding-top:20px; }
+#main-content { background:#111113 url(../Images/Content/bg4.jpg) no-repeat center top; width:100%; display:table; padding-top:20px; }
 #logo { height:150px; background:url(../Images/Content/logo.png) no-repeat center; margin-top:45px; display:block; }
 #nav-wrap { height:40px; background-color:#111; border-top:1px #333 solid; border-bottom:1px #333 solid; }
 #nav { margin:0 auto; padding:0px 20px 0px 20px; text-align:center; }
@@ -69,16 +69,25 @@ a:hover { color:white; }
 
 .center { text-align: center; } 
 
-#footer { background:#000 url(../Images/Content/equalizer.png) repeat-x center bottom; border-top:1px solid #292929; padding-top:30px; height:300px; }
+#footer { background:#111113 url(../Images/Content/equalizer.png) repeat-x center bottom; border-top:1px solid #292929; padding-top:30px; height:300px; }
 #footer .section {  height: 300px; border-right: 1px solid #333;} 
 
 /*Content Box*/
-.box { background: #222 url(../Images/Icons/content-panel-icon.png) no-repeat top right; margin-bottom: 20px; padding-left:10px; padding-top:10px; padding-right:10px; }
+.box { background: #222 url(../Images/Icons/heart-18x18.png) no-repeat top right; margin-bottom: 20px; padding-left:10px; padding-top:10px; padding-right:10px; }
 .box h2 { text-transform:uppercase; color:#7df; padding:0; margin:0; line-height: 24px; margin-bottom:10px; }
 .box h3 { color: #bbb; line-height:18px; margin-bottom: 5px; }
 .box .box-item-bag { list-style-type: none; padding:0; margin:0; }
 .box .box-item, .box ul#news li { border-top: 1px solid #333; padding-top:10px; padding-bottom:10px; }   
 .box .box-item-image { padding-left:10px; padding-right:10px; float:left; }
+
+/*Table*/
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background-color: transparent;
+}
+.table thead th { color: #7df; }
+
+
 
 
 /*TODO*/
