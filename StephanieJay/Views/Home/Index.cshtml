@@ -3,36 +3,39 @@
 }
 
 <h2>@ViewBag.Message</h2>
-<div id="carousel" class="carousel slide carousel-fade">
-    <!-- Carousel items -->
-    <div class="carousel-inner">
-        <div class="active item">
-            <img src="../../Images/Content/stephanie_jay.jpg" alt="" />
-            <div class="carousel-caption">
-                <h5>Slide 1</h5>
-                <p>Stuff about Slide 1 blah blah blah Slide 1 blah blah blah</p>
+<div class="row">
+    <div class="span12">
+        <div id="carousel" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="../../Images/Content/stephanie_jay.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <h5>Slide 1</h5>
+                        <p>Stuff about Slide 1 blah blah blah Slide 1 blah blah blah</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../../Images/Content/hed_kandi.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <h5>Slide 2</h5>
+                        <p>Stuff about Slide 2 blah blah blah Slide 2 blah blah blah</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../../Images/Content/hed_kandi2.jpg" alt="" />
+                    <div class="carousel-caption">
+                        <h5>Slide 3</h5>
+                        <p>Stuff about Slide 2 blah blah blah Slide 3 blah blah blah</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <img src="../../Images/Content/hed_kandi.jpg" alt="" />
-            <div class="carousel-caption">
-                <h5>Slide 2</h5>
-                <p>Stuff about Slide 2 blah blah blah Slide 2 blah blah blah</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../../Images/Content/hed_kandi2.jpg" alt="" />
-            <div class="carousel-caption">
-                <h5>Slide 3</h5>
-                <p>Stuff about Slide 2 blah blah blah Slide 3 blah blah blah</p>
-            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
         </div>
     </div>
-    <!-- Carousel nav -->
-    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
 </div>
-
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
     <a class="addthis_button_facebook">
@@ -43,16 +46,17 @@
     &nbsp;</a><a class="addthis_button_google"></a>
 </div>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f8ad6c67000c736"></script>
-<!-- AddThis Button END -->
 
 <div class="row">
     <div class="span12">
         <div class="box">
             <h2>Welcome.</h2>
-            <div class="box-item">
-                <p>Welcome to Stephanie Jay!</p>
-                <p>Autem atqui consul ut pri, no veniam graecis vim. Novum assentior id his, stet ipsum sit ei. An est delenit omnesque, detracto consectetuer usu ei. Vitae regione te cum. Pri id copiosae phaedrum, vix wisi fugit laudem in, ei eos appetere deseruisse. Inani consequat adipiscing ad nam, cu cum duis wisi voluptatum.</p>
-            </div>
+            <ul class="box-item-bag">
+                <li class="box-item">
+                    <h3>Welcome to Stephanie Jay!</h3>
+                    <span>Autem atqui consul ut pri, no veniam graecis vim. Novum assentior id his, stet ipsum sit ei. An est delenit omnesque, detracto consectetuer usu ei. Vitae regione te cum. Pri id copiosae phaedrum, vix wisi fugit laudem in, ei eos appetere deseruisse. Inani consequat adipiscing ad nam, cu cum duis wisi voluptatum.</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -60,16 +64,14 @@
     <div class="span6">
         <div class="box">
             <h2 class="yanone_kaffeesatz_regular">News.</h2>
-            <ul id="news"></ul>
+            <ul id="news" class="box-item-bag"></ul>
         </div>
     </div>
     <div class="span6">
         <div class="box">
-            <h2 class="yanone_kaffeesatz_regular">Twitter</h2>
+            <h2 class="yanone_kaffeesatz_regular">Twitter.</h2>
             <div class="tweetContainer">
-                <div class="box-item">
-                    <ul id="tweetlist"></ul>
-                </div>
+                <ul id="tweetlist" class="box-item-bag"></ul>
             </div>
         </div>
     </div>
@@ -78,27 +80,35 @@
     <div class="span8">
         <div class="box">
             <h2>Mixes.</h2>
-            <div class="box-item">
-                <p>Lorem ipsum dolor sit amet, an zril tempor sed. Sea in eirmod scripta scribentur, vix ei quaestio convenire reprehendunt. Sanctus nominavi antiopam cu quo, vocent numquam ad vel. Homero voluptaria comprehensam cu vel, cu error quidam quo. </p>
-                <p>Ne usu esse nonumy voluptua. Eos no dicat consul scripta. Aperiam omittam ea vis, probo porro cum cu. Et mea probo bonorum. Vidisse aliquid ex mel. In ius ponderum suavitate, id brute assueverit mediocritatem usu, omnium delicata volutpat eu mei.</p>
-            </div>
+            <ul class="box-item-bag">
+                <li class="box-item">
+                    <h3>Mix 1</h3>
+                    <span>Lorem ipsum dolor sit amet, an zril tempor sed. Sea in eirmod scripta scribentur, vix ei quaestio convenire reprehendunt. Sanctus nominavi antiopam cu quo, vocent numquam ad vel. Homero voluptaria comprehensam cu vel, cu error quidam quo. </span>
+                </li>
+                <li class="box-item">
+                    <h3>Mix 2</h3>
+                    <span>Ne usu esse nonumy voluptua. Eos no dicat consul scripta. Aperiam omittam ea vis, probo porro cum cu. Et mea probo bonorum. Vidisse aliquid ex mel. In ius ponderum suavitate, id brute assueverit mediocritatem usu, omnium delicata volutpat eu mei.</span>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="span4">
         <div class="box">
             <h2>Venues.</h2>
-            <div class="box-item">
-                <h3>1st Venue</h3>
-                <p>Lorem ipsum dolor sit amet, an zril tempor sed. Sea in eirmod scripta scribentur, vix ei quaestio convenire reprehendunt. Sanctus nominavi antiopam cu quo, vocent numquam ad vel. Homero voluptaria comprehensam cu vel, cu error quidam quo.</p>
-            </div>
-            <div class="box-item">
-                <h3>2nd Venue</h3>
-                <p>An mundi prodesset quo, ius discere deleniti in, tincidunt forensibus an pro. Qui dicat minim dicant ex. Est sale vulputate te, impetus reprimique id cum, vel et facer possim accumsan. Ex paulo omnium propriae duo.</p>
-            </div>
-            <div class="box-item">
-                <h3>3rd Venue</h3>
-                <p>An mundi prodesset quo, ius discere deleniti in, tincidunt forensibus an pro. Qui dicat minim dicant ex. Est sale vulputate te, impetus reprimique id cum, vel et facer possim accumsan. Ex paulo omnium propriae duo.</p>
-            </div>
+            <ul class="box-item-bag">
+                <li class="box-item">
+                    <h3>1st Venue</h3>
+                    <span>Lorem ipsum dolor sit amet, an zril tempor sed. Sea in eirmod scripta scribentur, vix ei quaestio convenire reprehendunt. Sanctus nominavi antiopam cu quo, vocent numquam ad vel. Homero voluptaria comprehensam cu vel, cu error quidam quo.</span>
+                </li>
+                <li class="box-item">
+                    <h3>2nd Venue</h3>
+                    <span>An mundi prodesset quo, ius discere deleniti in, tincidunt forensibus an pro. Qui dicat minim dicant ex. Est sale vulputate te, impetus reprimique id cum, vel et facer possim accumsan. Ex paulo omnium propriae duo.</span>
+                </li>
+                <li class="box-item">
+                    <h3>3rd Venue</h3>
+                    <span>An mundi prodesset quo, ius discere deleniti in, tincidunt forensibus an pro. Qui dicat minim dicant ex. Est sale vulputate te, impetus reprimique id cum, vel et facer possim accumsan. Ex paulo omnium propriae duo.</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

@@ -69,20 +69,42 @@ a:hover { color:white; }
 
 .center { text-align: center; } 
 
-#footer { background-color:#000000; border-top:1px solid #292929; margin-top:30px; height:400px; }
-#footer .section { height: 400px; border-right: 1px solid #333;} 
+#footer { background:#000 url(../Images/Content/equalizer.png) repeat-x center bottom; border-top:1px solid #292929; padding-top:30px; height:300px; }
+#footer .section {  height: 300px; border-right: 1px solid #333;} 
 
 /*Content Box*/
-.box { background: #222; margin-bottom: 10px; }
-.box h2, .box .box-item { padding-left:10px; padding-right:10px; }
-.box .box-item { height: 80px; border-top: 1px solid #333; }   
-.box h2 { text-transform:uppercase; color:#7df; }
-.box h3 { color: #bbb; }
+.box { background: #222; margin-bottom: 20px; padding-left:10px; padding-top:10px; padding-right:10px; }
+.box h2 { text-transform:uppercase; color:#7df; padding:0; margin:0; line-height: 24px; margin-bottom:10px; }
+.box h3 { color: #bbb; line-height:18px; margin-bottom: 5px; }
+.box .box-item-bag { list-style-type: none; padding:0; margin:0; }
+.box .box-item, .box ul#news li { border-top: 1px solid #333; padding-top:10px; padding-bottom:10px; }   
+.box .box-item-image { padding-left:10px; padding-right:10px; float:left; }
 
-ul#news {  }
-ul#news  { text-decoration:none; list-style: none; list-style-type:none; padding:0; margin:0; }
-ul#news li { list-style-type: none; padding: 10px; border-top: 1px solid #333; }
+/*TODO*/
 ul#news .parss-title a { color:#BBB }
+
+/*Twitter*/
+/* styling for the twitter feed scroll */
+.tweetContainer {
+    height: 21.6em; /* total visible tweets, in this case set to 5 */ 
+    overflow: hidden; /*keep tweets outside of the container from being seen */
+}
+#tweetlist {
+    position: relative;
+    top: -71px; /* allows a tweet to be moved into hidden space before scrolling into view */
+    margin: 0px;
+    padding: 0px;
+}
+.tweetImage {
+    float: left;
+    padding-right: 10px;
+}
+.tweet 
+{
+    height:50px;
+}
+
+
 
 /*Section*/
 .section h2 { text-transform:uppercase; }
