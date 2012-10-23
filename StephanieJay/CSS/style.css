@@ -105,6 +105,9 @@ ul#news .parss-title a { color:#BBB }
     margin: 0px;
     padding: 0px;
 }
+#tweetlist a {
+    
+}
 .tweetImage {
     float: left;
     padding-right: 10px;
