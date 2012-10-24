@@ -107,6 +107,7 @@
     <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\lightbox.css" />
     <Content Include="CSS\style.css" />
+    <Content Include="CSS\reset.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\Content\bg-grill.jpg" />
     <Content Include="Images\Content\bg.png" />
