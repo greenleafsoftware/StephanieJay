@@ -4,11 +4,12 @@
 /*USED*/
 
 body {
-    font:100%/1.5 Helvetica, sans-serifserif;
+    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
    -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
 	background:#000;
-	color:#FFFFFF; font-size:11px; font-family:Helvetica, sans-serif;
+	color:#FFFFFF; 
+	font-size:13px;
 	background-color:#222 !important;
 }
 
@@ -46,13 +47,18 @@ legend { color: White; }
 #footer { background:#111113 url(../Images/Content/equalizer.png) repeat-x center bottom; border-top:1px solid #292929; padding-top:30px; height:300px; }
 #footer .section {  height: 300px; border-right: 1px solid #333;} 
 
+/*    <!--<link href="@Url.Content("~/CSS/bootstrap-responsive.css")" rel="stylesheet" type="text/css" />-->*/
+
 /*Content Box*/
-.box { box-shadow: 0px 0px 20px rgba(0,0,0,0.6); background: #222 url(../Images/Icons/heart-18x18.png) no-repeat top right; margin-bottom: 20px; padding-left:10px; padding-top:10px; padding-right:10px; }
+.box { box-shadow: 0px 0px 20px rgba(0,0,0,0.6); background: #222 url(../Images/Icons/heart-18x18.png) no-repeat top right; margin-bottom: 20px; padding:10px; }
 .box h2 { text-transform:uppercase; color:#7df; padding:0; margin:0; line-height: 24px; margin-bottom:10px; }
 .box h3 { color: #bbb; line-height:18px; margin-bottom: 5px; }
 .box .box-item-bag { list-style-type: none; padding:0; margin:0; }
 .box .box-item, .box ul#news li { border-top: 1px solid #333; padding-top:10px; padding-bottom:10px; }   
 .box .box-item-image { padding-left:10px; padding-right:10px; float:left; }
+
+/*Validation*/
+span.required { color:Fuchsia; }
 
 /*Table*/
 .table tbody tr:hover td,
