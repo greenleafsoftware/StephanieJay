@@ -142,6 +142,7 @@
     <Content Include="Images\Content\whiskeymist.png" />
     <Content Include="Images\Icons\content-panel-icon.png" />
     <Content Include="Images\Icons\facebook-24x24.png" />
+    <Content Include="Images\Icons\facebook-32x32.png" />
     <Content Include="Images\Icons\heart-18x18.png" />
     <Content Include="Images\Content\arrow1-left.png" />
     <Content Include="Images\Content\arrow1-right.png" />
@@ -157,8 +158,11 @@
     <Content Include="Images\Content\slider-fade-left.png" />
     <Content Include="Images\Content\slider-fade-right.png" />
     <Content Include="Images\Icons\glyphicons-halflings.png" />
+    <Content Include="Images\Icons\mixcloud-32x32.png" />
     <Content Include="Images\Icons\soundcloud-24x24.png" />
+    <Content Include="Images\Icons\soundcloud-32x32.png" />
     <Content Include="Images\Icons\twitter-24x24.png" />
+    <Content Include="Images\Icons\twitter-32x32.png" />
     <Content Include="Scripts\bootstrap-carousel.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\cross.cufonfonts.js" />
@@ -252,7 +256,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52507</DevelopmentServerPort>
+          <DevelopmentServerPort>59869</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
