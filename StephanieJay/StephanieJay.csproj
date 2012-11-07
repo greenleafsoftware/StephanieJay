@@ -140,6 +140,7 @@
     <Content Include="Images\Content\thegeisha.png" />
     <Content Include="Images\Content\tibu.png" />
     <Content Include="Images\Content\whiskeymist.png" />
+    <Content Include="Images\Icons\beatport-32x32.png" />
     <Content Include="Images\Icons\content-panel-icon.png" />
     <Content Include="Images\Icons\facebook-24x24.png" />
     <Content Include="Images\Icons\facebook-32x32.png" />
