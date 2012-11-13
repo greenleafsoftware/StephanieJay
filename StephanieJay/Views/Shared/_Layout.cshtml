@@ -77,7 +77,7 @@
             );
         });
 
-        Cufon.replace('.box h2, .box h3, .section h2, #nav a, .parss-title a', { fontFamily: 'Yanone Kaffeesatz Regular', hover: true });
+        Cufon.replace('.box h2, .box h3, h2, #nav a, .parss-title a', { fontFamily: 'Yanone Kaffeesatz Regular', hover: true });
 
     </script>   
 </head>
@@ -107,66 +107,44 @@
     <div id="footer">
     <div class="container">
         <div class="row">
-            <div class="span4">
-                <div class="section">
-                    <h2>Quick Links.</h2>
-                    <div class="item">@Html.ActionLink("Home", "Index", "Home")</div>
-                    <div class="item">@Html.ActionLink("Gigs", "Index", "Gigs")</div>
-                    <div class="item">@Html.ActionLink("Gallery", "Index", "Gallery")</div>
-                    <div class="item">@Html.ActionLink("Mixes", "Index", "Mixes")</div>
-                    <div class="item">@Html.ActionLink("Bio", "Index", "Bio")</div>
-                    <div class="item">@Html.ActionLink("Contact", "Index", "Contact")</div>
-                    <div class="item">@Html.ActionLink("Venues", "Index", "Venues")</div>
-                </div>
-            </div>
-            <div class="span1">
-                <h2>Contact.</h2>
-            </div>
-            <div class="span1">
-                <div class="section">
-                    <div class="item">
+            <div class="span6">
+                <h2>SOCIAL.</h2>
+                <div class="row">
+                    <div class="span1">
                         <img alt="twitter" src="../../Images/Icons/twitter-32x32.png" />
                         <a href="http://www.twitter.com/djstephaniejay">twitter</a>
                     </div>
-                </div>
-            </div>
-            <div class="span1">
-                <div class="section">
-                    <div class="item">
+                    <div class="span1">
                         <img alt="facebook" src="../../Images/Icons/facebook-32x32.png" />
                         <a href="http://www.facebook.com/djstephaniej">facebook</a>
                     </div>
-                </div>
-            </div>
-            <div class="span1">
-                <div class="section">
-                    <div class="item">
+                    <div class="span1">
                         <img alt="mixcloud" src="../../Images/Icons/mixcloud-32x32.png" />
                         <a href="http://www.mixcloud.com/stephaniejay">mixcloud</a>
                     </div>
-                </div>
-            </div>
-            <div class="span1">
-                <div class="section">
-                    <div class="item">
+                    <div class="span1">
                         <img alt="soundcloud" src="../../Images/Icons/soundcloud-32x32.png" />
                         <a href="http://www.soundcloud.com/stephaniejay">soundcloud</a>
                     </div>
-                </div>
-            </div>
-            <div class="span1">
-                <div class="section">
-                    <div class="item">
+                    <div class="span1">
                         <img alt="soundcloud" src="../../Images/Icons/beatport-32x32.png" />
                         <a href="http://www.beatport.com/artist/stephanie-jay/194092">beatport</a>
                     </div>
-                    <div class="item"></div>
-                </div>
-            </div>
-        </div><!-- End Row -->
-        <div class="row">
+                </div><!-- End Row -->
+            </div><!-- End Span6 -->
+        </div>
+        <div class="row" style="margin-top:60px;">
             <div class="span12">
-                <span>All rights reserved © @DateTime.Now.Year Stephanie Jay.</span>
+                <div class="row">
+                    <div class="span2">
+                        <img alt="Stephanie Jay" src="../../Images/Content/logo.png" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                        <span>All rights reserved © @DateTime.Now.Year Stephanie Jay.</span>
+                    </div>
+                </div>  
             </div>
         </div>
     </div>
