@@ -1,0 +1,22 @@
+﻿@model StephanieJay.Models.NewsItemModel
+
+@{
+    ViewBag.Title = "Bio";
+}
+
+<div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+        <div class="box">
+        <h2>Edit News.</h2>
+        <ul class="box-item-bag">
+            <li class="box-item">
+                @foreach (var newsItem in Model.NewsItems)
+                {
+                    <p>@newsItem.Title</p>
+                }
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>

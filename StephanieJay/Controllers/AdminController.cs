@@ -4,19 +4,22 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml.Linq;
+using StephanieJay.Classes;
+using StephanieJay.Models;
 
 namespace StephanieJay.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult EditNews()
         {
-            return View();
+            NewsItemModel news = DataFactory.GetNews();
+            return View(news);
         }
     }
 }
