@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 <rss version="2.0">
    <channel>
-      <title>Liftoff News</title>
-      <link>http://liftoff.msfc.nasa.gov/</link>
-      <description>Liftoff to Space Exploration.</description>
-      <language>en-us</language>
-      <pubDate>Tue, 10 Jun 2003 04:00:00 GMT</pubDate>
-
-      <lastBuildDate>Tue, 10 Jun 2003 09:41:01 GMT</lastBuildDate>
+      <title>DJ StephanieJay News</title>
+      <link>http://www.djstephaniejay.com/</link>
+      <description>The latest information from DJ Stephanie Jay.</description>
+      <language>en-gb</language>
+      <lastBuildDate>Mon, 19 Nov 2012 00:00:01 GMT</lastBuildDate>
       <docs>http://blogs.law.harvard.edu/tech/rss</docs>
-      <generator>Weblog Editor 2.0</generator>
+      <generator>Greenleaf Web Editor</generator>
       <managingEditor>editor@example.com</managingEditor>
       <webMaster>webmaster@example.com</webMaster>
+<<<<<<< HEAD
       <item>
 
          <title>Star City</title>
@@ -44,5 +43,42 @@
          <guid>http://liftoff.msfc.nasa.gov/2003/05/20.html#item570</guid>
 
       </item>
+=======
+     <item>
+       <title>New Mix Released</title>
+       <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+       <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
+       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+       <guid>1</guid>
+     </item>
+     <item>
+       <title>New Mix Released</title>
+       <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+       <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
+       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+       <guid>1</guid>
+     </item>
+     <item>
+       <title>New Mix Released</title>
+       <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+       <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
+       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+       <guid>1</guid>
+     </item>
+     <item>
+       <title>New Mix Released</title>
+       <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+       <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
+       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+       <guid>1</guid>
+     </item>
+     <item>
+       <title>New Mix Released</title>
+       <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+       <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
+       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+       <guid>1</guid>
+     </item>
+>>>>>>> News update
    </channel>
 </rss>
