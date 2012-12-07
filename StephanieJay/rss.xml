@@ -1,49 +1,30 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
-
-<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-	<channel>
-		<title>Stephanie Jay - Home</title>
-		<link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
-		<description>The latest information from the DJ Stephanie Jay web site.</description>
-		<language>en-gb</language>
-		<lastBuildDate>Fri, 26 Oct 2012 13:36:58 GMT</lastBuildDate>
-		<copyright>Copyright: (C) DJ Stephanie Jay, contact Stephanie Jay for terms and conditions of reuse.</copyright>
-		<image>
-			<url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
-			<title>Stephanie Jay - Home</title>
-			<link>http://www.bbc.co.uk/news/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
-			<width>120</width>
-			<height>60</height>
-		</image>
-		<ttl>3</ttl>
-		<atom:link href="http://www.djstephaniejay.com/rss.xml" rel="self" type="application/rss+xml"/>
-		<item>
-			<title>New Mixes released</title>
-			<description>Six new mixes have been produced and uploaded to Soundcloud.</description>
-			<link>http://www.soundcloud.com/stephaniejay</link>
-			<!--<guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-bristol-20092894</guid>-->
-			<pubDate>Fri, 26 Oct 2012 12:31:38 GMT</pubDate>
-			<!--<media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63725000/jpg/_63725910_comp.jpg"/>
-			<media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63725000/jpg/_63725911_comp.jpg"/>-->
-		</item>
-		<item>
-			<title>Success at Gatecrasher</title>
-			<description>A four-day tour ends at Gatecrasher.</description>
-			<link>http://www.bbc.co.uk/news/world-middle-east-20091598#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
-			<guid isPermaLink="false">http://www.bbc.co.uk/news/world-middle-east-20091598</guid>
-			<pubDate>Fri, 26 Oct 2012 11:46:44 GMT</pubDate>
-			<media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63734000/jpg/_63734860_63734198.jpg"/>
-			<media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63734000/jpg/_63734861_63734198.jpg"/>
-		</item>
-		<item>
-			<title>Stephanie to release album</title>
-			<description>The latest mixes that have been kept back are soon to be available to download.</description>
-			<link>http://www.bbc.co.uk/news/world-20093259#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>
-			<guid isPermaLink="false">http://www.bbc.co.uk/news/world-20093259</guid>
-			<pubDate>Fri, 26 Oct 2012 12:51:55 GMT</pubDate>
-			<media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/63729000/jpg/_63729228_t69f88re.jpg"/>
-			<media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/63729000/jpg/_63729229_t69f88re.jpg"/>
-		</item>
-	</channel>
+<?xml version="1.0"?>
+<rss xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.0">
+  <channel>
+    <title>DJ StephanieJay News</title>
+    <link>http://www.djstephaniejay.com/</link>
+    <description>The latest information from DJ Stephanie Jay.</description>
+    <language>en-gb</language>
+    <item>
+      <title>New Mix Released</title>
+      <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+      <description>This is a new test to check that it works ok...</description>
+      <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+      <guid>1</guid>
+    </item>
+    <item>
+      <title>Website Open for Business</title>
+      <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+      <description>There is a new website online!</description>
+      <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+      <guid>2</guid>
+    </item>
+    <item>
+      <title>XML News Feed is UP!</title>
+      <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+      <description>Yey!  We've now managed to generate an RSS feed!</description>
+      <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
+      <guid>3</guid>
+    </item>
+  </channel>
 </rss>

@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Channel.cs" />
     <Compile Include="Classes\DataFactory.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BioController.cs" />
@@ -71,12 +72,16 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MixesController.cs" />
     <Compile Include="Controllers\VenuesController.cs" />
+    <Compile Include="Classes\Element.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Image.cs" />
+    <Compile Include="Classes\Item.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\NewsItemModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Rss.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
