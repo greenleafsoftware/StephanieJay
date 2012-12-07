@@ -4,7 +4,7 @@
 /*USED*/
 
 body {
-    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+    font-family: Lucida Sans Unicode, Lucida Grande, Lucida Sans, Lucida Console, Calibri, sans-serif;
    -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
 	background:#000;
@@ -84,12 +84,12 @@ ul#news .parss-title a { color:#BBB }
 }
 #tweetlist {
     position: relative;
-    top: -71px; /* allows a tweet to be moved into hidden space before scrolling into view */
+    top: -80px; /* allows a tweet to be moved into hidden space before scrolling into view */
     margin: 0px;
     padding: 0px;
 }
 #tweetlist a {
-    
+    font-size: 10pt;
 }
 .tweetImage {
     float: left;
@@ -97,7 +97,7 @@ ul#news .parss-title a { color:#BBB }
 }
 .tweet 
 {
-    height:50px;
+    height:60px;
 }
 
 

@@ -146,7 +146,11 @@
 /* line 95, ../sass/lightbox.sass */
 .lb-data {
   padding: 0 10px;
+<<<<<<< HEAD
   /*color: #bbbbbb;*/
+=======
+  color: #bbbbbb;
+>>>>>>> galleryStarter
 }
 /* line 98, ../sass/lightbox.sass */
 .lb-data .lb-details {

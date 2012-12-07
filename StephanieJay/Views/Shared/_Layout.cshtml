@@ -21,14 +21,13 @@
     <script src="@Url.Content("~/Scripts/yanone-kaffeesatz.cufonfonts.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.dotdotdot-1.5.1.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/jquery.parss.uncompressed.js")" type="text/javascript"></script>
-    <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.pack.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $.stratus({
                 align: 'top',
                 theme: 'http://stratus.sc/themes/dark.css',
                 color: '000fff',
-                links: 'http://soundcloud.com/stephaniejay/stephanie-jay-what-you-dont'
+                links: 'http://soundcloud.com/stephaniejay/stephanie-jay-what-you-dont,http://soundcloud.com/stephaniejay/sam-and-the-womp-bom-bom'
             });
 
             function autoScroll() {
@@ -67,7 +66,7 @@
 
             /*News Feed*/
             $("#news").PaRSS(
-                'http://localhost:55026/rss.xml', // url to the feed
+                'http://www.greenleafsoftware.co.uk/News.xml',
                 4, // number of items to retrieve
                 "M jS Y, g:i a", // date format
                 true, // include descriptions?
@@ -90,8 +89,8 @@
             @Html.ActionLink("Home", "Index", "Home")
             @Html.ActionLink("Gigs", "Index", "Gigs")
             @Html.ActionLink("Gallery", "Index", "Gallery")
-            @Html.ActionLink("Mixes", "Index", "Mixes")
-            @Html.ActionLink("Bio", "Index", "Bio")
+@*            @Html.ActionLink("Mixes", "Index", "Mixes")
+*@            @Html.ActionLink("Bio", "Index", "Bio")
             @Html.ActionLink("Contact", "Index", "Contact")
             @Html.ActionLink("Venues", "Index", "Venues")
         </div>
@@ -135,13 +134,15 @@
         </div>
         <div class="row" style="margin-top:60px;">
             <div class="span12">
-                <div class="row">
+                <div class="row-fluid">
+                    <div class="span9"></div>
                     <div class="span2">
                         <img alt="Stephanie Jay" src="../../Images/Content/logo.png" />
                     </div>
                 </div>
-                <div class="row">
-                    <div class="span4">
+                <div class="row-fluid">
+                    <div class="span9"></div>
+                    <div class="span3">
                         <span>All rights reserved © @DateTime.Now.Year Stephanie Jay.</span>
                     </div>
                 </div>  

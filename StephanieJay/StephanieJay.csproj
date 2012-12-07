@@ -142,6 +142,12 @@
     <Content Include="Images\Content\prev.png" />
     <Content Include="Images\Content\savannah.png" />
     <Content Include="Images\Content\shakedown.png" />
+    <Content Include="Images\Content\hed_kandi.jpg" />
+    <Content Include="Images\Content\hed_kandi2.jpg" />
+    <Content Include="Images\Content\hed_kandi3.jpg" />
+    <Content Include="Images\Content\loading.gif" />
+    <Content Include="Images\Content\next.png" />
+    <Content Include="Images\Content\prev.png" />
     <Content Include="Images\Content\stephanie_jay.jpg" />
     <Content Include="Images\Content\thegeisha.png" />
     <Content Include="Images\Content\tibu.png" />
