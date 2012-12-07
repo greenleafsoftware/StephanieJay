@@ -1,7 +1,7 @@
-﻿@model StephanieJay.Models.NewsItemModel
+﻿@model IList<StephanieJay.Classes.News>
 
 @{
-    ViewBag.Title = "Bio";
+    ViewBag.Title = "News";
 }
 
 <div class="row-fluid">
@@ -10,12 +10,12 @@
         <div class="box">
         <h2>Edit News.</h2>
         <ul class="box-item-bag">
+        @foreach (var newsItem in Model)
+        {
             <li class="box-item">
-                @foreach (var newsItem in Model.NewsItems)
-                {
-                    <p>@newsItem.Title</p>
-                }
+                <span>@newsItem.Title</span><input onclick="#" title="Edit" type="button" value="Edit" class="btn btn-primary"/>
             </li>
+        }
         </ul>
         </div>
     </div>
