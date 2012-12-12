@@ -69,7 +69,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BioController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -82,7 +82,6 @@
     <Compile Include="Classes\Image.cs" />
     <Compile Include="Classes\Item.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\NewsItemModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Rss.cs" />
   </ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using System.Xml.Serialization;
+
 namespace RSS
 {
     [XmlRootAttribute(ElementName = "item")]
@@ -13,41 +14,10 @@ namespace RSS
             this.description = description;
         }
 
-        public string author
-        {
-            get { return _author; }
-            set { _author = value; }
-        }
-
-        public string commments
-        {
-            get { return _comments; }
-            set { _comments = value; }
-        }
-
-        public string source
-        {
-            get { return _source; }
-            set { _source = value; }
-        }
-
-        public string category
-        {
-            get { return _category; }
-            set { _category = value; }
-        }
-
-        public string guid
-        {
-            get { return _guid; }
-            set { _guid = value; }
-        }
-
-        private string _author;
-        private string _comments;
-        private string _source;
-        private string _category;
-        private string _guid;
-
+        public string author { get; set; }
+        public string commments { get; set; }
+        public string source { get; set; }
+        public string category { get; set; }
+        public string guid { get; set; }
     }
 }

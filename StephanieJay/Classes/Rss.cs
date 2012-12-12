@@ -18,11 +18,10 @@ namespace RSS
             Version = version;
         }
 
-        public Channel channel
-        {
-            get { return _channel; }
-            set { _channel = value; }
-        }
+        public Channel channel { get; set; }
+
+        [XmlAttribute("version")]
+        public string Version { get; set; }
 
         public void Save(string filename)
         {
@@ -40,18 +39,8 @@ namespace RSS
         public static Rss Load(Stream fileStream)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Rss));
-            Rss ret = (Rss)serializer.Deserialize(fileStream);
-            return ret;
+            Rss rss = (Rss)serializer.Deserialize(fileStream);
+            return rss;
         }
-
-        [XmlAttribute("version")]
-        public string Version
-        {
-            get { return _version; }
-            set { _version = value; }
-        }
-
-        private Channel _channel;
-        private string _version;
     }
 }
