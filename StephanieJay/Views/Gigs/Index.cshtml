@@ -1,4 +1,5 @@
-﻿@{
+﻿@model StephanieJay.Classes.Gigs
+@{
     ViewBag.Title = "Gigs";
 }
 
@@ -12,34 +13,29 @@
                 <thead>
                     <tr>
                         <th>Date.</th>
-                        <th>Gig.</th>
+                        <th>Venue.</th>
                         <th>City.</th>
                         <th>Country.</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>test1</td>
-                        <td>test2</td>
-                        <td>test3</td>
-                        <td>test4</td>
-                    </tr>
-                    <tr>
-                        <td>test1</td>
-                        <td>test2</td>
-                        <td>test3</td>
-                        <td>test4</td>
-                    </tr>
-                    <tr>
-                        <td>test1</td>
-                        <td>test2</td>
-                        <td>test3</td>
-                        <td>test4</td>
-                    </tr>
-                </tbody>
+                @foreach (var Group in Model.groups)
+                {
+                    <tr><td colspan="4">@Group.name</td></tr>
+                    foreach (var Job in Group.jobs)
+                    {
+                        <tr>
+                            <td>@Job.date</td>
+                            <td>@Job.venue</td>
+                            <td>@Job.city</td>
+                            <td>@Job.country</td>
+                        </tr>
+                    }
+                }
+               </tbody>
             </table>
 
-        </box>
+        </div>
 
        
     </div>
