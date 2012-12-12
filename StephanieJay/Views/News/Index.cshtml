@@ -1,4 +1,4 @@
-﻿@model IList<StephanieJay.Classes.News>
+﻿@model List<RSS.Item>
 
 @{
     ViewBag.Title = "News";
@@ -13,7 +13,7 @@
         @foreach (var newsItem in Model)
         {
             <li class="box-item">
-                <span>@newsItem.Title</span><input onclick="#" title="Edit" type="button" value="Edit" class="btn btn-primary"/>
+                <span>@newsItem.title</span><input onclick="#" title="Edit" type="button" value="Edit" class="btn btn-primary"/>
             </li>
         }
         </ul>
