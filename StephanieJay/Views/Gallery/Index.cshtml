@@ -27,7 +27,7 @@
                 $.each(data.items, function (i, item) {
 
                     // Let's only display 9 photos (a 3x3 grid), starting from a random point in the feed					
-                    if (iCount > iStart && iCount < (iStart + 17)) {
+                    if (iCount > iStart && iCount < (iStart + 30)) {
 
                         // I only want the ickle square thumbnails
                         var sourceSquare = (item.media.m).replace("_m.jpg", "_s.jpg");
@@ -52,11 +52,11 @@
     </script>
     <style>
     /* The images styling is needed to turn the <ul> into a 3x3 grid */
-    #images {
+@*    #images {
 	    padding: 			0px;
 	    margin: 			0px;
 	    height: 			250px;
-	    width: 				550px;
+	    min-width: 			550px;
 	    overflow:			hidden;
     }
     #images ul {
@@ -65,7 +65,7 @@
 	    padding: 			0px;
 	    margin: 			0px;
     }
-    #images ul li {
+*@    #images ul li {
 	    display: 			inline;
     }
     #images ul li img {

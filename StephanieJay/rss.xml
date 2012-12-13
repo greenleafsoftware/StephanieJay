@@ -8,7 +8,7 @@
     <item>
       <title>New Mix Released</title>
       <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
-      <description>This is a new test to check that it works ok...</description>
+      <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
       <guid>1</guid>
     </item>
@@ -25,6 +25,11 @@
       <description>Yey!  We've now managed to generate an RSS feed!</description>
       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
       <guid>3</guid>
+    </item>
+    <item>
+      <title>AAAAA</title>
+      <link>VVVVVVV</link>
+      <description>Testing</description>
     </item>
   </channel>
 </rss>

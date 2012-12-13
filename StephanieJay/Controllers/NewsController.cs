@@ -16,7 +16,7 @@ namespace StephanieJay.Controllers
 
         public NewsController()
         {
-            WebRequest request = WebRequest.CreateDefault(new Uri("http://www.greenleafsoftware.co.uk/XML/News.xml"));
+            WebRequest request = WebRequest.CreateDefault(new Uri(System.Web.Configuration.WebConfigurationManager.AppSettings["urlRSS"]));
             WebResponse response = request.GetResponse();
             _newsRss = Rss.Load(response.GetResponseStream());
         }
@@ -41,7 +41,7 @@ namespace StephanieJay.Controllers
             if (ModelState.IsValid)
             {
                 _newsRss.channel.items.Add(news);
-                _newsRss.Save(Server.MapPath("..//rss.xml"));
+                _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
                 return RedirectToAction("Index");
             }
             return View(news);
@@ -65,7 +65,8 @@ namespace StephanieJay.Controllers
             if (ModelState.IsValid)
             {
                 //_dataFactory.News.Entry(news).State = EntityState.Modified;
-                _newsRss.Save("C:\\Users\\Al\\Desktop\\test.xml");
+                //_newsRss.Save(Server.MapPath("..//rss.xml"));
+                _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
                 return RedirectToAction("Index");
             }
             return View(news);
@@ -87,7 +88,7 @@ namespace StephanieJay.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             _newsRss.channel.items.RemoveAt(id);
-            _newsRss.Save("C:\\Users\\Al\\Desktop\\test.xml");
+            _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
             return RedirectToAction("Index");
         }
     }
