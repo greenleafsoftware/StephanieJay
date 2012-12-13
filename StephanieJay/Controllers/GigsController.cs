@@ -15,7 +15,7 @@ namespace StephanieJay.Controllers
 
         public ActionResult Index()
         {
-            gigs = Gigs.Load(Server.MapPath("Gigs2.xml"));
+            gigs = Gigs.Load(Server.MapPath("Gigs.xml"));
             return View(gigs);
         }
 
