@@ -9,23 +9,24 @@
     <div class="span9">
         <div class="box">
             <h2>Create News</h2>
-		    <form method="post" action="Create" class="form-horizontal">
+            @using (Html.BeginForm("Create", "News", new { SearchModel = Model }, FormMethod.Post, new { Class = "form-horizontal" }))
+            {
                 <div class="control-group">
                     <label class="control-label" for="contactname">Title<span class="required">*</span></label>
                     <div class="controls">
-                        <input type="text" id="contactname" name="contactname" class="required"/>
+                        @Html.TextBoxFor(x => x.title)
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="email">Link<span class="required">*</span></label>
                     <div class="controls">
-                        <input type="text" id="email" name="email" class="required"/>
+                        @Html.TextBoxFor(x => x.link)
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="message">Description<span class="required">*</span></label>
                     <div class="controls">
-                        <textarea rows="8" id="message" name="message" class="span6 required"></textarea>
+                        @Html.TextAreaFor(x => x.description)
                     </div>
                 </div>
                 <div class="control-group">
@@ -33,7 +34,7 @@
                         <button type="submit" class="btn btn-primary">Create</button>
                     </div>
                 </div>
-		    </form>
+            }
         </div>
 	</div><!-- form -->
 </div>

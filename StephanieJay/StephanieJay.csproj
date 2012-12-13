@@ -62,10 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Channel.cs" />
-    <Compile Include="Classes\DataFactory.cs" />
     <Compile Include="Classes\Gigs.cs" />
-    <Compile Include="Classes\News.cs" />
-    <Compile Include="Models\NewsData.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BioController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
