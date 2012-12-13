@@ -41,7 +41,7 @@ namespace StephanieJay.Controllers
             if (ModelState.IsValid)
             {
                 _newsRss.channel.items.Add(news);
-                _newsRss.Save("C:\\Users\\Al\\Desktop\\test.xml");
+                _newsRss.Save(Server.MapPath("..//rss.xml"));
                 return RedirectToAction("Index");
             }
             return View(news);
