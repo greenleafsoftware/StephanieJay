@@ -6,17 +6,20 @@
 
 <div class="row-fluid">
     <div class="span2"></div>
-    <div class="span8">
+    <div class="span9">
         <div class="box">
-        <h2>Edit News.</h2>
-        <ul class="box-item-bag">
-        @foreach (var newsItem in Model)
-        {
-            <li class="box-item">
-                <span>@newsItem.title</span><input onclick="#" title="Edit" type="button" value="Edit" class="btn btn-primary"/>
-            </li>
-        }
-        </ul>
+            <h2>Edit News</h2>
+            <ul class="box-item-bag">
+            @using (Html.BeginForm("Edit", "News", new { SearchModel = Model }, FormMethod.Get, new { Class = "form-horizontal" }))
+            {
+                for (int i = 0; i < Model.Count; i++)
+                {
+                    <li class="box-item">
+                        <span>@Model[i].title</span><input onclick="@Url.Action("Edit", "News", new { Id = i })" title="Edit" type="submit" value="Edit" class="btn btn-primary"/>
+                    </li>
+                }
+            }
+            </ul>
         </div>
-    </div>
+	</div><!-- form -->
 </div>
