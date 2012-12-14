@@ -21,7 +21,8 @@ namespace StephanieJay.Controllers
             WebResponse response = request.GetResponse();
             _newsRss = Rss.Load(response.GetResponseStream());*/
 
-            _newsRss = Rss.Load(Server.MapPath(WebConfigurationManager.AppSettings["LocalRSS"]));
+            //_newsRss = Rss.Load(Server.MapPath(WebConfigurationManager.AppSettings["LocalRSS"]));
+            _newsRss = Rss.Load("C:\\Users\\Al\\Desktop\\test.xml");
         }
 
         //GET: /News

@@ -9,7 +9,7 @@
     <div class="span9">
         <div class="box">
             <h2>Edit News</h2>
-            @using (Html.BeginForm("Edit", "News", Model, FormMethod.Post, new { Class = "form-horizontal" }))
+            @using (Html.BeginForm("Edit", "News", new { news = Model }, FormMethod.Post, new { Class = "form-horizontal" }))
             {
                 <div class="control-group">
                     <label class="control-label" for="contactname">Title<span class="required">*</span></label>

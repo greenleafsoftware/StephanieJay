@@ -228,12 +228,6 @@
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="XML\News.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="XML\rss.xml">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\News\Edit.cshtml" />
