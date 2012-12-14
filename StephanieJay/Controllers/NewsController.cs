@@ -16,7 +16,11 @@ namespace StephanieJay.Controllers
 
         public NewsController()
         {
+<<<<<<< HEAD
             /*WebRequest request = WebRequest.CreateDefault(new Uri("http://www.greenleafsoftware.co.uk/XML/News.xml"));
+=======
+            WebRequest request = WebRequest.CreateDefault(new Uri(System.Web.Configuration.WebConfigurationManager.AppSettings["urlRSS"]));
+>>>>>>> 6fe9a243b7b865cf78e8732e106082aa84470119
             WebResponse response = request.GetResponse();
             _newsRss = Rss.Load(response.GetResponseStream());*/
             _newsRss = Rss.Load("C:\\Users\\Al\\Desktop\\test.xml");
@@ -42,8 +46,12 @@ namespace StephanieJay.Controllers
             if (ModelState.IsValid)
             {
                 _newsRss.channel.items.Add(news);
+<<<<<<< HEAD
                 //_newsRss.Save(Server.MapPath("..//rss.xml"));
                 _newsRss.Save("C:\\Users\\Al\\Desktop\\test.xml");
+=======
+                _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
+>>>>>>> 6fe9a243b7b865cf78e8732e106082aa84470119
                 return RedirectToAction("Index");
             }
             return View(news);
@@ -66,9 +74,15 @@ namespace StephanieJay.Controllers
         {
             if (ModelState.IsValid)
             {
+<<<<<<< HEAD
                 _newsRss.channel.items.RemoveAll(x => x.guid == news.guid);
                 _newsRss.channel.items.Add(news);
                 _newsRss.Save("C:\\Users\\Al\\Desktop\\test.xml");
+=======
+                //_dataFactory.News.Entry(news).State = EntityState.Modified;
+                //_newsRss.Save(Server.MapPath("..//rss.xml"));
+                _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
+>>>>>>> 6fe9a243b7b865cf78e8732e106082aa84470119
                 return RedirectToAction("Index");
             }
             return View(news);
@@ -77,8 +91,13 @@ namespace StephanieJay.Controllers
         // GET: /News/Delete/5
         public ActionResult Delete(string id)
         {
+<<<<<<< HEAD
             _newsRss.channel.items.RemoveAll(x => x.guid == id);
             _newsRss.Save("C:\\Users\\Al\\Desktop\\test.xml");
+=======
+            _newsRss.channel.items.RemoveAt(id);
+            _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
+>>>>>>> 6fe9a243b7b865cf78e8732e106082aa84470119
             return RedirectToAction("Index");
         }
     }

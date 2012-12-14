@@ -8,7 +8,11 @@
     <item>
       <title>Website Open for Business</title>
       <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
+<<<<<<< HEAD
       <description>There is a new website online! test</description>
+=======
+      <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
+>>>>>>> 6fe9a243b7b865cf78e8732e106082aa84470119
       <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
       <guid>2</guid>
     </item>
@@ -27,9 +31,15 @@
       <guid>3</guid>
     </item>
     <item>
+<<<<<<< HEAD
       <title>new one</title>
       <link>www.google.com</link>
       <description>testetsetet</description>
+=======
+      <title>AAAAA</title>
+      <link>VVVVVVV</link>
+      <description>Testing</description>
+>>>>>>> 6fe9a243b7b865cf78e8732e106082aa84470119
     </item>
   </channel>
 </rss>
