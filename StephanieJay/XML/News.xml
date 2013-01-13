@@ -13,13 +13,6 @@
       <guid>2</guid>
     </item>
     <item>
-      <title>Alex Test 2</title>
-      <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
-      <description>The Mix is back to kick start the new year and as always we are celebrating the festive season in true Hed Kandi style.</description>
-      <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
-      <guid>1</guid>
-    </item>
-    <item>
       <title>Another test</title>
       <link>www.google.com</link>
       <description>testing again</description>
@@ -28,6 +21,11 @@
       <title>more testing</title>
       <link>www.bing.com</link>
       <description>Another test yet again, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blahain, blah blah blah</description>
+    </item>
+    <item>
+      <title>test</title>
+      <link>www.google.com</link>
+      <description>test</description>
     </item>
   </channel>
 </rss>

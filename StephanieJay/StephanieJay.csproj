@@ -66,6 +66,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BioController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
@@ -234,7 +235,7 @@
     <Content Include="XML\News.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\News\Edit.cshtml" />
+    <Content Include="Views\Admin\News\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -258,18 +259,20 @@
     <Content Include="Views\Venues\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\News\Create.cshtml" />
+    <Content Include="Views\Admin\News\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\Admin\News\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\News\Delete.cshtml" />
+    <Content Include="Views\Admin\News\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Contact\ContactConfirm.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Admin\Index.cshtml" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
