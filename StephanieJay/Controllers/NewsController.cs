@@ -11,18 +11,14 @@ using System.Web.Configuration;
 
 namespace StephanieJay.Controllers
 {
+    [Authorize(Users="Stephanie")]
     public class NewsController : Controller
     {
         private Rss _newsRss;
 
         public NewsController()
         {
-            /*WebRequest request = WebRequest.CreateDefault(new Uri(WebConfigurationManager.AppSettings["urlRSS"]));
-            WebResponse response = request.GetResponse();
-            _newsRss = Rss.Load(response.GetResponseStream());*/
-
-            //_newsRss = Rss.Load(Server.MapPath(WebConfigurationManager.AppSettings["LocalRSS"]));
-            _newsRss = Rss.Load("C:\\Users\\Al\\Desktop\\test.xml");
+            _newsRss = Rss.Load(Server.MapPath(WebConfigurationManager.AppSettings["News"]));
         }
 
         //GET: /News
