@@ -18,9 +18,11 @@ html { margin:0; padding:0; }
 a { color:#7df; text-decoration:none; cursor:pointer; font-size:12pt;  }
 a:hover { color:white; }
 
-.clear { clear:both; }
+/*
 .green { color:#b9e753; }
 .green:hover { color:#cfef87; }
+*/
+
 .white { color:#FFFFFF; }
 .white:hover { 
 	animation: togreen 0.2s;
@@ -28,8 +30,10 @@ a:hover { color:white; }
 	-webkit-animation: togreen 0.2s; /* Safari and Chrome */
 	color:#b9e753; 
 }
+
 .left { float:left; }
 .right { float:right; }
+.clear { clear:both; }
 
 legend { color: White; }
 

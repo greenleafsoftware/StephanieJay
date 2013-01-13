@@ -26,14 +26,18 @@ namespace RSS
         public void Save(string filename)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Rss));
-            FileStream stream = File.Create(filename);
-            serializer.Serialize(stream, this);
+            using (FileStream stream = File.Create(filename))
+            {
+                serializer.Serialize(stream, this);
+            }
         }
 
         public static Rss Load(string filename)
         {
-            Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read);
-            return Load(stream);
+            using (Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read))
+            {
+                return Load(stream);
+            }
         }
 
         public static Rss Load(Stream fileStream)

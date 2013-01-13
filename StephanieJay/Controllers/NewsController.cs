@@ -7,6 +7,7 @@ using System.Xml.Linq;
 using StephanieJay.Models;
 using System.Net;
 using RSS;
+using System.Web.Configuration;
 
 namespace StephanieJay.Controllers
 {
@@ -16,9 +17,12 @@ namespace StephanieJay.Controllers
 
         public NewsController()
         {
-            WebRequest request = WebRequest.CreateDefault(new Uri(System.Web.Configuration.WebConfigurationManager.AppSettings["urlRSS"]));
+            /*WebRequest request = WebRequest.CreateDefault(new Uri(WebConfigurationManager.AppSettings["urlRSS"]));
             WebResponse response = request.GetResponse();
-            _newsRss = Rss.Load(response.GetResponseStream());
+            _newsRss = Rss.Load(response.GetResponseStream());*/
+
+            //_newsRss = Rss.Load(Server.MapPath(WebConfigurationManager.AppSettings["LocalRSS"]));
+            _newsRss = Rss.Load("C:\\Users\\Al\\Desktop\\test.xml");
         }
 
         //GET: /News
@@ -41,16 +45,16 @@ namespace StephanieJay.Controllers
             if (ModelState.IsValid)
             {
                 _newsRss.channel.items.Add(news);
-                _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
+                _newsRss.Save(Server.MapPath(WebConfigurationManager.AppSettings["LocalRSS"]));
                 return RedirectToAction("Index");
             }
             return View(news);
         }
 
         // GET: /News/Edit/5
-        public ActionResult Edit(int id = 0)
+        public ActionResult Edit(string id)
         {
-            Item news = _newsRss.channel.items[id];
+            Item news = _newsRss.channel.items.FirstOrDefault(x => x.guid == id);
             if (news == null)
             {
                 return HttpNotFound();
@@ -64,31 +68,19 @@ namespace StephanieJay.Controllers
         {
             if (ModelState.IsValid)
             {
-                //_dataFactory.News.Entry(news).State = EntityState.Modified;
-                //_newsRss.Save(Server.MapPath("..//rss.xml"));
-                _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
+                _newsRss.channel.items.RemoveAll(x => x.guid == news.guid);
+                _newsRss.channel.items.Add(news);
+                _newsRss.Save(Server.MapPath(WebConfigurationManager.AppSettings["LocalRSS"]));
                 return RedirectToAction("Index");
             }
             return View(news);
         }
 
         // GET: /News/Delete/5
-        public ActionResult Delete(int id = 0)
+        public ActionResult Delete(string id)
         {
-            Item news = _newsRss.channel.items[id];
-            if (news == null)
-            {
-                return HttpNotFound();
-            }
-            return View(news);
-        }
-
-        // POST: /News/Delete/5
-        [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            _newsRss.channel.items.RemoveAt(id);
-            _newsRss.Save(Server.MapPath(System.Web.Configuration.WebConfigurationManager.AppSettings["LocalRSS"]));
+            _newsRss.channel.items.RemoveAll(x => x.guid == id);
+            _newsRss.Save(Server.MapPath(WebConfigurationManager.AppSettings["LocalRSS"]));
             return RedirectToAction("Index");
         }
     }
