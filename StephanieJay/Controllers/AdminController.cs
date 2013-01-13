@@ -12,72 +12,12 @@ using System.Web.Configuration;
 namespace StephanieJay.Controllers
 {
     [Authorize(Users="Stephanie")]
-    public class NewsController : Controller
+    public class AdminController : Controller
     {
-        private Rss _newsRss;
-
-        public NewsController()
-        {
-            _newsRss = Rss.Load(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
-        }
-
         //GET: /News
         public ActionResult Index()
         {
-            var news = _newsRss.channel.items;
-            return View(news);
-        }
-
-        //GET: /News/Create
-        public ActionResult Create()
-        {
             return View();
-        }
-
-        //POST: /News/Create
-        [HttpPost]
-        public ActionResult Create(Item news)
-        {
-            if (ModelState.IsValid)
-            {
-                _newsRss.channel.items.Add(news);
-                _newsRss.Save(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
-                return RedirectToAction("Index");
-            }
-            return View(news);
-        }
-
-        // GET: /News/Edit/5
-        public ActionResult Edit(string id)
-        {
-            Item news = _newsRss.channel.items.FirstOrDefault(x => x.guid == id);
-            if (news == null)
-            {
-                return HttpNotFound();
-            }
-            return View(news);
-        }
-
-        // POST: /News/Edit/5
-        [HttpPost]
-        public ActionResult Edit(Item news)
-        {
-            if (ModelState.IsValid)
-            {
-                _newsRss.channel.items.RemoveAll(x => x.guid == news.guid);
-                _newsRss.channel.items.Add(news);
-                _newsRss.Save(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
-                return RedirectToAction("Index");
-            }
-            return View(news);
-        }
-
-        // GET: /News/Delete/5
-        public ActionResult Delete(string id)
-        {
-            _newsRss.channel.items.RemoveAll(x => x.guid == id);
-            _newsRss.Save(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
-            return RedirectToAction("Index");
         }
     }
 }
