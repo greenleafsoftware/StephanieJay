@@ -1,6 +1,44 @@
-﻿@{
+﻿@model StephanieJay.Models.ContactViewModel
+
+@{
     ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@*<h2>Contact</h2>
+@using (Html.BeginForm()) { 
+    @Html.ValidationSummary(true) 
+    <fieldset> 
+        <legend>Contact Me</legend> 
+        <div class="editor-label"> 
+            @Html.LabelFor(model => model.From) 
+        </div> 
+        <div class="editor-field"> 
+            @Html.TextBoxFor(model => model.From) 
+            @Html.ValidationMessageFor(model => model.From) 
+        </div> 
+        <div class="editor-label"> 
+            @Html.LabelFor(model => model.Subject) 
+        </div> 
+        <div class="editor-field"> 
+            @Html.TextBoxFor(model => model.Subject) 
+            @Html.ValidationMessageFor(model => model.Subject) 
+        </div> 
+        <div class="editor-label"> 
+            @Html.LabelFor(model => model.Message) 
+        </div> 
+        <div class="editor-field"> 
+            @Html.TextBoxFor(model => model.Message) 
+            @Html.ValidationMessageFor(model => model.Message) 
+        </div> 
+        <p> 
+            <input type="submit" value="Send" /> 
+        </p> 
+    </fieldset> 
+}
+@{
+    ViewBag.Title = "Contact";
+}*@
 
 <div class="row">
     <div class="span9">
@@ -11,19 +49,25 @@
                 <div class="control-group">
                     <label class="control-label" for="contactname">Your Name<span class="required">*</span></label>
                     <div class="controls">
-                        <input type="text" id="contactname" name="contactname" class="required"/>
+                        @Html.TextBoxFor(model => model.From) 
+                        @Html.ValidationMessageFor(model => model.From) 
+                        @*<input type="text" id="contactname" name="contactname" class="required"/>*@
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="email">Your Email<span class="required">*</span></label>
+                    <label class="control-label" for="email">Your Email/Phone Number<span class="required">*</span></label>
                     <div class="controls">
-                        <input type="text" id="email" name="email" class="required"/>
+                        @Html.TextBoxFor(model => model.ContactVia) 
+                        @Html.ValidationMessageFor(model => model.ContactVia) 
+                        @*<input type="text" id="email" name="email" class="required"/>*@
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="message">Message<span class="required">*</span></label>
                     <div class="controls">
-                        <textarea rows="8" id="message" name="message" class="span6 required"></textarea>
+                        @Html.TextAreaFor(model => model.Message) 
+                        @Html.ValidationMessageFor(model => model.Message) 
+                        @*<textarea rows="8" id="message" name="message" class="span6 required"></textarea>*@
                     </div>
                 </div>
                 <div class="control-group">
