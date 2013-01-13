@@ -18,7 +18,7 @@ namespace StephanieJay.Controllers
 
         public NewsController()
         {
-            _newsRss = Rss.Load(Server.MapPath(WebConfigurationManager.AppSettings["News"]));
+            _newsRss = Rss.Load(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
         }
 
         //GET: /News
