@@ -1,4 +1,6 @@
-﻿@{
+﻿@model StephanieJay.ViewModels.HomeViewModel
+
+@{
     ViewBag.Title = "Home";
 }
 
@@ -11,9 +13,7 @@
                 <div class="active item">
                     <img src="../../Images/Content/0steph.jpg" alt="" />
                     <div class="carousel-caption">
-@*                        <h5>Slide 1</h5>
-                        <p>Stuff about Slide 1 blah blah blah Slide 1 blah blah blah</p>
-*@                    </div>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="../../Images/Content/1steph.jpg" alt="" />
@@ -49,8 +49,8 @@
             <h2>Welcome.</h2>
             <ul class="box-item-bag">
                 <li class="box-item">
-                    <h3>Welcome to Stephanie Jay!</h3>
-                    <span>Looking forward to the next few weeks of gigs, which include next Saturday's Hedkandi at Gatecrasher Birmingham and HedKandi Nye at the Me Hotel Barcelona. What a great year 2012 has been.....roll on 2013 :)</span>
+                    <h3>@Model.WelcomeMessage.title</h3>
+                    <span>@Model.WelcomeMessage.message</span>
                 </li>
             </ul>
         </div>

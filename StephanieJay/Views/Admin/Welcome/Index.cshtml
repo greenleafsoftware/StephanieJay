@@ -1,0 +1,27 @@
+﻿@model StephanieJay.Classes.WelcomeMessage      
+@{
+    ViewBag.Title = "Admin - Welcome Message";
+}
+
+<div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span9">
+        <div class="box">
+            <h2>Edit Welcome Message</h2>
+            <ul class="box-item-bag">
+            @using (Html.BeginForm("Index", "Welcome", Model, FormMethod.Post, new { Class = "form-horizontal" }))
+            {
+                <li class="box-item">
+                    <h3>@Html.TextBoxFor(x => x.title)</h3>
+                    <div><span>@Html.TextAreaFor(x => x.message)</span></div>
+                    <div class="clear"></div>
+                </li>
+
+                <li class="box-item">
+                    <button type="submit" class="btn btn-primary"> Save</button>
+                </li>
+            }
+            </ul>
+        </div>
+	</div>
+</div>

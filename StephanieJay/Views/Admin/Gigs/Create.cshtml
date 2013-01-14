@@ -1,0 +1,40 @@
+﻿@model RSS.Item
+
+@{
+    ViewBag.Title = "Create News";
+}
+
+<div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span9">
+        <div class="box">
+            <h2>Create News</h2>
+            @using (Html.BeginForm("Create", "News", Model, FormMethod.Post, new { Class = "form-horizontal" }))
+            {
+                <div class="control-group">
+                    <label class="control-label" for="contactname">Title<span class="required">*</span></label>
+                    <div class="controls">
+                        @Html.TextBoxFor(x => x.title)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="email">Link<span class="required">*</span></label>
+                    <div class="controls">
+                        @Html.TextBoxFor(x => x.link)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="message">Description<span class="required">*</span></label>
+                    <div class="controls">
+                        @Html.TextAreaFor(x => x.description)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                </div>
+            }
+        </div>
+	</div><!-- form -->
+</div>

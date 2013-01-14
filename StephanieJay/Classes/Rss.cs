@@ -22,29 +22,5 @@ namespace RSS
 
         [XmlAttribute("version")]
         public string Version { get; set; }
-
-        public void Save(string filename)
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(Rss));
-            using (FileStream stream = File.Create(filename))
-            {
-                serializer.Serialize(stream, this);
-            }
-        }
-
-        public static Rss Load(string filename)
-        {
-            using (Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read))
-            {
-                return Load(stream);
-            }
-        }
-
-        public static Rss Load(Stream fileStream)
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(Rss));
-            Rss rss = (Rss)serializer.Deserialize(fileStream);
-            return rss;
-        }
     }
 }

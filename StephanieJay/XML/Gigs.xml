@@ -2,68 +2,68 @@
 <gigs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <group>
     <name>June 2012</name>
-    <job>
+    <gig>
       <date>23 June 2012</date>
       <venue>BBC Radio 1's Hackney Weekend</venue>
       <city>London</city>
       <country>United Kingdom</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>24 June 2012</date>
       <venue>Rock A Field</venue>
       <city>Roeser</city>
       <country>Luxembourg</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>25 June 2012</date>
       <venue>L'Olympia</venue>
       <city>Paris</city>
       <country>Fance</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>27 June 2012</date>
       <venue>Columbiahalle</venue>
       <city>Berlin</city>
       <country>Germany</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>29 June 2012</date>
       <venue>Rock Wechter</venue>
       <city>Wechter</city>
       <country>Belgium</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>30 June 2012</date>
       <venue>Open Air</venue>
       <city>St. Gallen</city>
       <country>Switzerland</country>
-    </job>
+    </gig>
   </group>
   <group>
     <name>July 2012</name>
-    <job>
+    <gig>
       <date>01 July 2012</date>
       <venue>FuturFestival</venue>
       <city>Parco Dora</city>
       <country>Italy</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>02 July 2012</date>
       <venue>Rock in Roma</venue>
       <city>Rome</city>
       <country>Italy</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>06 July 2012</date>
       <venue>Wireless Festival</venue>
       <city>London</city>
       <country>United Kingdom</country>
-    </job>
-    <job>
+    </gig>
+    <gig>
       <date>07 July 2012</date>
       <venue>Rock In Rio</venue>
       <city>Madrid</city>
       <country>Spain</country>
-    </job>
+    </gig>
   </group>
 </gigs>

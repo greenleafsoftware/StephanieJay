@@ -4,20 +4,16 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using StephanieJay.Classes;
+using System.Web.Configuration;
 
 namespace StephanieJay.Controllers
 {
     public class GigsController : Controller
     {
-        //
-        // GET: /Gigs/
-        Gigs gigs = null;
-
         public ActionResult Index()
         {
-            gigs = Gigs.Load(Server.MapPath("Gigs.xml"));
+            var gigs = Xml<Gigs>.Load(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["Gigs"]));
             return View(gigs);
         }
-
     }
 }

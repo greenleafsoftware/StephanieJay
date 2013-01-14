@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml.Linq;
+using StephanieJay.ViewModels;
+using System.Web.Configuration;
+using StephanieJay.Classes;
 
 namespace StephanieJay.Controllers
 {
@@ -11,7 +14,9 @@ namespace StephanieJay.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var viewModel = new HomeViewModel();
+            viewModel.WelcomeMessage = Xml<WelcomeMessage>.Load(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["WelcomeMessage"]));
+            return View(viewModel);
         }
 
         public ActionResult About()

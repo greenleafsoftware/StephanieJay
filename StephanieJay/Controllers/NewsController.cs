@@ -8,6 +8,7 @@ using StephanieJay.Models;
 using System.Net;
 using RSS;
 using System.Web.Configuration;
+using StephanieJay.Classes;
 
 namespace StephanieJay.Controllers
 {
@@ -15,17 +16,19 @@ namespace StephanieJay.Controllers
     public class NewsController : Controller
     {
         private Rss _newsRss;
+        private readonly string _xmlPath;
 
         public NewsController()
         {
-            _newsRss = Rss.Load(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
+            _newsRss = Xml<Rss>.Load(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
+            _xmlPath = System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]);
         }
 
         //GET: /News
         public ActionResult Index()
         {
             var news = _newsRss.channel.items;
-            return View(news);
+            return View("/Views/Admin/News/Index.cshtml", news);
         }
 
         //GET: /News/Create
@@ -41,7 +44,7 @@ namespace StephanieJay.Controllers
             if (ModelState.IsValid)
             {
                 _newsRss.channel.items.Add(news);
-                _newsRss.Save(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
+                Xml<Rss>.Save(_xmlPath, _newsRss);
                 return RedirectToAction("Index");
             }
             return View(news);
@@ -66,7 +69,7 @@ namespace StephanieJay.Controllers
             {
                 _newsRss.channel.items.RemoveAll(x => x.guid == news.guid);
                 _newsRss.channel.items.Add(news);
-                _newsRss.Save(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
+                Xml<Rss>.Save(_xmlPath, _newsRss);
                 return RedirectToAction("Index");
             }
             return View(news);
@@ -76,7 +79,7 @@ namespace StephanieJay.Controllers
         public ActionResult Delete(string id)
         {
             _newsRss.channel.items.RemoveAll(x => x.guid == id);
-            _newsRss.Save(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["News"]));
+            Xml<Rss>.Save(_xmlPath, _newsRss);
             return RedirectToAction("Index");
         }
     }
