@@ -24,7 +24,8 @@ namespace StephanieJay
             routes.MapRoute(
                 "Admin",
                 "Admin/{controller}/{action}/{id}",
-                new { controller = "Admin", action = "Index", id = UrlParameter.Optional }
+                new { controller = "Admin", action = "Index", id = UrlParameter.Optional },
+                new string[] { "StephanieJay.Controllers.Admin" }
             );
 
             routes.MapRoute(

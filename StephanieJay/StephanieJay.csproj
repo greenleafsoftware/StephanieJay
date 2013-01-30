@@ -67,10 +67,11 @@
     <Compile Include="Classes\Gigs.cs" />
     <Compile Include="Classes\Xml.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Admin\BioController.cs" />
     <Compile Include="Controllers\BioController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\WelcomeController.cs" />
-    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\Admin\WelcomeController.cs" />
+    <Compile Include="Controllers\Admin\NewsController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
@@ -90,7 +91,8 @@
     <Compile Include="ViewModels\HomeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\XMLFile1.xml" />
+    <Content Include="App_Data\Bio.xml" />
+    <Content Include="App_Data\Gigs.xml" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -237,10 +239,8 @@
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="XML\Gigs.xml" />
-    <Content Include="XML\Gigs.xml" />
-    <Content Include="XML\News.xml" />
-    <Content Include="XML\WelcomeMessage.xml" />
+    <Content Include="App_Data\News.xml" />
+    <Content Include="App_Data\WelcomeMessage.xml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Admin\News\Edit.cshtml" />

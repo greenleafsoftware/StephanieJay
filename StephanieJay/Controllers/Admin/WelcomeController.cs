@@ -25,7 +25,7 @@ namespace StephanieJay.Controllers
         //GET: /Admin/Welcome
         public ActionResult Index()
         {
-            var welcome = Xml<WelcomeMessage>.Load(System.Web.HttpContext.Current.Server.MapPath(WebConfigurationManager.AppSettings["WelcomeMessage"]));
+            var welcome = Xml<WelcomeMessage>.Load(_xmlPath);
             return View("/Views/Admin/Welcome/Index.cshtml", welcome);
         }
 
