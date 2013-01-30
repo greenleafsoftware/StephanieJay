@@ -5,10 +5,7 @@
 
 <div class="row">
     <div class="span12">
-
-
         <div class="box">
-
             <table class="table">
                 <thead>
                     <tr>
@@ -22,22 +19,19 @@
                 @foreach (var Group in Model.groups)
                 {
                     <tr><td colspan="4">@Group.name</td></tr>
-                    foreach (var Job in Group.jobs)
+                    foreach (var Gig in Group.gigs)
                     {
                         <tr>
-                            <td>@Job.date</td>
-                            <td>@Job.venue</td>
-                            <td>@Job.city</td>
-                            <td>@Job.country</td>
+                            <td>@Gig.date</td>
+                            <td>@Gig.venue</td>
+                            <td>@Gig.city</td>
+                            <td>@Gig.country</td>
                         </tr>
                     }
                 }
                </tbody>
             </table>
-
         </div>
-
-       
     </div>
 </div>
 

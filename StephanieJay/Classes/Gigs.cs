@@ -11,13 +11,15 @@ namespace StephanieJay.Classes
     [XmlRootAttribute(ElementName = "gigs")]
     public class Gigs
     {
-        public Group group { get; set; }
+        [XmlElement(ElementName = "group", Type = typeof(Group))]
+        public List<Group> groups { get; set; }
     }
 
     [XmlRootAttribute(ElementName = "group")]
     public class Group
     {
         public string name { get; set; }
+        [XmlElement(ElementName = "gig", Type = typeof(Gig))]
         public List<Gig> gigs { get; set; }
     }
 

@@ -11,7 +11,7 @@
         $(document).ready(function () {
 
             // Our very special jQuery JSON fucntion call to Flickr, gets details of the most recent 20 images			   
-            $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=71517849@N07&format=json&jsoncallback=?", displayImages);
+            $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=71517849@N07&tags=DjSj&format=json&jsoncallback=?", displayImages);
 
             function displayImages(data) {
                 // Randomly choose where to start. A random number between 0 and the number of photos we grabbed (20) minus 9 (we are displaying 9 photos).
