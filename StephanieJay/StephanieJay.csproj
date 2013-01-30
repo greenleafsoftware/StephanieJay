@@ -240,7 +240,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="App_Data\News.xml" />
-    <Content Include="App_Data\WelcomeMessage.xml" />
+    <Content Include="App_Data\WelcomeMessage.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Admin\News\Edit.cshtml" />
