@@ -3,25 +3,25 @@
     ViewBag.Title = "Admin - Welcome Message";
 }
 
-<div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span9">
-        <div class="box">
-            <h2>Edit Welcome Message</h2>
-            <ul class="box-item-bag">
-            @using (Html.BeginForm("Index", "Welcome", Model, FormMethod.Post, new { Class = "form-horizontal" }))
-            {
-                <li class="box-item">
-                    <h3>@Html.TextBoxFor(x => x.title)</h3>
-                    <div><span>@Html.TextAreaFor(x => x.message)</span></div>
-                    <div class="clear"></div>
-                </li>
+<div class="row">
+    <div class="span12 box">
+        <h2>Edit Welcome Message</h2>
+        <ul class="box-item-bag">
+        @using (Html.BeginForm("Index", "Welcome", FormMethod.Post, new { Class = "form-horizontal" }))
+        {
+            <li class="box-item">
+                <label>Title:</label>
+                @Html.TextBoxFor(x => x.title)
+            </li>
+            <li class="box-item">
+                <label>Message:</label>
+                @Html.TextAreaFor(x => x.message, new { Class = "span12", Rows = "10" })
+            </li>
+            <li class="box-item">
+                <input id="btnSubmit" type="submit" value="Save" class="btn btn-primary" />
+            </li>
+        }
+        </ul>
 
-                <li class="box-item">
-                    <button type="submit" class="btn btn-primary"> Save</button>
-                </li>
-            }
-            </ul>
-        </div>
 	</div>
 </div>

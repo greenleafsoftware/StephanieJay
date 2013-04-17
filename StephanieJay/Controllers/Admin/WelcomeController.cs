@@ -9,6 +9,7 @@ using System.Net;
 using RSS;
 using System.Web.Configuration;
 using StephanieJay.Classes;
+using StephanieJay.Classes.Extensions;
 
 namespace StephanieJay.Controllers
 {
@@ -31,10 +32,11 @@ namespace StephanieJay.Controllers
 
         //POST: /Admin/Welcome
         [HttpPost]
-        public ActionResult Index(WelcomeMessage message)
+        public ActionResult Index(WelcomeMessage model)
         {
-            Xml<WelcomeMessage>.Save(_xmlPath, message);
-            return View("/Views/Admin/Welcome/Index.cshtml", message);
+            //ModelState.DumpErrors();
+            Xml<WelcomeMessage>.Save(_xmlPath, model);
+            return RedirectToAction("Index", "Admin");
         }
     }
 }

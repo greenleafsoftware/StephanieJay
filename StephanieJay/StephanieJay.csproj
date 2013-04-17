@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Classes\Channel.cs" />
     <Compile Include="Classes\Bio.cs" />
+    <Compile Include="Classes\Extensions\ModelExtensions.cs" />
     <Compile Include="Classes\WelcomeMessage.cs" />
     <Compile Include="Classes\Gigs.cs" />
     <Compile Include="Classes\Xml.cs" />
