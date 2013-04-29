@@ -27,7 +27,7 @@ namespace StephanieJay.Areas.Admin.Controllers
         public ActionResult Index()
         {
             var welcome = Xml<WelcomeMessage>.Load(_xmlPath);
-            return View("/Views/Admin/Welcome/Index.cshtml", welcome);
+            return View(welcome);
         }
 
         //POST: /Admin/Welcome

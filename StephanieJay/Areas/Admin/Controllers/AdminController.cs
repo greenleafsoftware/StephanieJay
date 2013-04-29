@@ -9,7 +9,7 @@ using System.Net;
 using RSS;
 using System.Web.Configuration;
 
-namespace StephanieJay.Controllers
+namespace StephanieJay.Areas.Admin.Controllers
 {
     [Authorize(Users="Stephanie")]
     public class AdminController : Controller
@@ -17,7 +17,7 @@ namespace StephanieJay.Controllers
         //GET: /Admin
         public ActionResult Index()
         {
-            return RedirectToAction("Index", "Admin", new { Area = "Admin" });
+            return View();
         }
     }
 }

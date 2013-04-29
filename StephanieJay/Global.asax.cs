@@ -21,26 +21,18 @@ namespace StephanieJay
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-
-
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional }, // Parameter defaults
+                namespaces: new[] { "StephanieJay.Controllers" }
             );
-
-            routes.MapRoute(
-                "Admin",
-                "Admin/{controller}/{action}/{id}",
-                new { controller = "Admin", action = "Index", id = UrlParameter.Optional },
-                new string[] { "StephanieJay.Controllers.Admin" }
-            );
-
         }
 
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
