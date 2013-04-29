@@ -28,7 +28,7 @@ namespace StephanieJay.Areas.Admin.Controllers
         public ActionResult Index()
         {
             var news = _newsRss.channel.items;
-            return View("/Views/Admin/News/Index.cshtml", news);
+            return View(news);
         }
 
         //GET: /News/Create

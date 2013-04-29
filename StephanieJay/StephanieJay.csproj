@@ -71,7 +71,6 @@
     <Compile Include="Classes\Xml.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\BioController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BioController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Areas\Admin\Controllers\WelcomeController.cs" />
