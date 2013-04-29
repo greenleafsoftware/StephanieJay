@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Configuration;
 using StephanieJay.Classes;
 
-namespace StephanieJay.Controllers.Admin
+namespace StephanieJay.Areas.Admin.Controllers
 {
     public class BioController : Controller
     {
@@ -21,7 +21,8 @@ namespace StephanieJay.Controllers.Admin
         public ActionResult Index()
         {
             var bio = Xml<Bio>.Load(_xmlPath);
-            return View("/Views/Admin/Bio/Index.cshtml", bio);
+            return View();
+            //return View("/Views/Admin/Bio/Index.cshtml", bio);
         }
 
         //POST: /Admin/Welcome

@@ -11,7 +11,7 @@ using System.Web.Configuration;
 using StephanieJay.Classes;
 using StephanieJay.Classes.Extensions;
 
-namespace StephanieJay.Controllers
+namespace StephanieJay.Areas.Admin.Controllers
 {
     [Authorize(Users="Stephanie")]
     public class WelcomeController : Controller

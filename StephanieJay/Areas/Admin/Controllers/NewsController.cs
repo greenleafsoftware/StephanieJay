@@ -10,7 +10,7 @@ using RSS;
 using System.Web.Configuration;
 using StephanieJay.Classes;
 
-namespace StephanieJay.Controllers.Admin
+namespace StephanieJay.Areas.Admin.Controllers
 {
     [Authorize(Users="Stephanie")]
     public class NewsController : Controller
