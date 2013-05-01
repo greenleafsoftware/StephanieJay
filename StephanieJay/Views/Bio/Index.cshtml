@@ -1,4 +1,6 @@
-﻿@{
+﻿@model StephanieJay.ViewModels.BioViewModel
+
+@{
     ViewBag.Title = "Bio";
 }
 
@@ -9,7 +11,7 @@
         <h2>Bio.</h2>
         <ul class="box-item-bag">
             <li class="box-item">
-                
+                @Model.Bio.description
             </li>
         </ul>
         </div>

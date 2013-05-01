@@ -14,6 +14,7 @@
     <AssemblyName>StephanieJay</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -90,6 +91,7 @@
     <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Rss.cs" />
+    <Compile Include="ViewModels\BioViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

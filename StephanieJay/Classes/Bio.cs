@@ -2,7 +2,7 @@
 
 namespace StephanieJay.Classes
 {
-    [XmlRootAttribute(ElementName = "bio")]
+    [XmlRootAttribute(ElementName = "Bio")]
     public class Bio
     {
         public string description { get; set; }

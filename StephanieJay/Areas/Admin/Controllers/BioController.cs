@@ -8,6 +8,7 @@ using StephanieJay.Classes;
 
 namespace StephanieJay.Areas.Admin.Controllers
 {
+    [Authorize(Users = "Stephanie")]
     public class BioController : Controller
     {
         private readonly string _xmlPath;
@@ -21,7 +22,7 @@ namespace StephanieJay.Areas.Admin.Controllers
         public ActionResult Index()
         {
             var bio = Xml<Bio>.Load(_xmlPath);
-            return View();
+            return View(bio);
             //return View("/Views/Admin/Bio/Index.cshtml", bio);
         }
 
@@ -30,7 +31,7 @@ namespace StephanieJay.Areas.Admin.Controllers
         public ActionResult Index(Bio bio)
         {
             Xml<Bio>.Save(_xmlPath, bio);
-            return View("/Views/Admin/Bio/Index.cshtml", bio);
+            return RedirectToAction("Index", "Admin");
         }
     }
 }

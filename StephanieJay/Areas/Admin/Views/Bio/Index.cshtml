@@ -9,15 +9,15 @@
         <div class="box">
             <h2>Edit Bio</h2>
             <ul class="box-item-bag">
-            @using (Html.BeginForm("Index", "Bio", Model, FormMethod.Post, new { Class = "form-horizontal" }))
+            @using (Html.BeginForm("Index", "Bio", FormMethod.Post, new { Class = "form-horizontal" }))
             {
                 <li class="box-item">
-                    <div><span>@Html.TextAreaFor(x => x.description)</span></div>
-                    <div class="clear"></div>
+                <label>Bio Information:</label>
+                    @Html.TextAreaFor(x => x.description, new { Class = "span12", Rows = "10" })
                 </li>
 
                 <li class="box-item">
-                    <button type="submit" class="btn btn-primary"> Save</button>
+                    <input id="btnSubmit" type="submit" value="Save" class="btn btn-primary" />
                 </li>
             }
             </ul>
