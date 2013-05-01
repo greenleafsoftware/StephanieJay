@@ -10,6 +10,6 @@ namespace StephanieJay.ViewModels
     public class HomeViewModel
     {
         public WelcomeMessage WelcomeMessage { get; set; }
-        public Rss News { get; set; }
+        public List<Item> News { get; set; }
     }
 }

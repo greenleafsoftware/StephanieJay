@@ -60,7 +60,17 @@
     <div class="span6">
         <div class="box">
             <h2 class="yanone_kaffeesatz_regular">News.</h2>
-            <ul id="news" class="box-item-bag"></ul>
+            <ul class="box-item-bag">
+@foreach (var news in Model.News)
+{
+                <li class="box-item">
+                    <h3>@news.title</h3>
+                    <a href="@news.link">@news.link</a>
+                    <div><span>@news.description</span></div>
+                    <div class="clear"></div>
+                </li>
+}
+            </ul>
         </div>
     </div>
     <div class="span6">
