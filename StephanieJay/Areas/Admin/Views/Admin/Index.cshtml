@@ -8,16 +8,15 @@
             <h2>Admin</h2>
             <ul class="box-item-bag">
                 <li class="box-item">
-                    <h3>@Html.ActionLink("Edit Welcome Message", "Index", "Welcome")</h3>
+                    @Html.ActionLink("Edit Welcome Message", "Index", "Welcome")
+                <li class="box-item">
+                    @Html.ActionLink("Edit News", "Index", "News")
                 </li>
                 <li class="box-item">
-                    <h3>@Html.ActionLink("Edit News", "Index", "News")</h3>
+                    @Html.ActionLink("Edit Bio", "Index", "Bio")
                 </li>
                 <li class="box-item">
-                    <h3>@Html.ActionLink("Edit Bio", "Index", "Bio")</h3>
-                </li>
-                <li class="box-item">
-                    <h3>@Html.ActionLink("Edit Gigs", "Index", "Gigs")</h3>
+                    @Html.ActionLink("Edit Gigs", "Index", "Gigs")
                 </li>
             </ul>
         </div>
