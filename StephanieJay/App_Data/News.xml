@@ -16,5 +16,15 @@
       <title>sdfsdfsdf</title>
       <description>sdfsdf</description>
     </item>
+    <item>
+      <title>Test Link </title>
+      <link>www.google.com</link>
+      <description>A lovely news item here</description>
+    </item>
+    <item>
+      <title>Anotehr news item here</title>
+      <link>www.yahoo.com</link>
+      <description>test test etseseidfjsoejdf siodjf sodjf soidjf soidfosidjfadnfaijsdfansdfasdfasdfpuandf sdf sdf sdf sdf </description>
+    </item>
   </channel>
 </rss>

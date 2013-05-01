@@ -1,6 +1,9 @@
-/* ============================================================
-    Sections
-============================================================ */
+/*
+    
+    Master CSS
+
+*/
+
 /*USED*/
 
 body {
@@ -15,13 +18,9 @@ body {
 
 html { margin:0; padding:0; }
 
-a { color:#7df; text-decoration:none; cursor:pointer; font-size:12pt;  }
+a { color:#7df; text-decoration:none; cursor:pointer; font-size:10pt;  }
 a:hover { color:white; }
-
-/*
-.green { color:#b9e753; }
-.green:hover { color:#cfef87; }
-*/
+#nav a { font-size:14pt; }
 
 .white { color:#FFFFFF; }
 .white:hover { 

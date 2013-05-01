@@ -4,48 +4,11 @@
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-@*<h2>Contact</h2>
-@using (Html.BeginForm()) { 
-    @Html.ValidationSummary(true) 
-    <fieldset> 
-        <legend>Contact Me</legend> 
-        <div class="editor-label"> 
-            @Html.LabelFor(model => model.From) 
-        </div> 
-        <div class="editor-field"> 
-            @Html.TextBoxFor(model => model.From) 
-            @Html.ValidationMessageFor(model => model.From) 
-        </div> 
-        <div class="editor-label"> 
-            @Html.LabelFor(model => model.Subject) 
-        </div> 
-        <div class="editor-field"> 
-            @Html.TextBoxFor(model => model.Subject) 
-            @Html.ValidationMessageFor(model => model.Subject) 
-        </div> 
-        <div class="editor-label"> 
-            @Html.LabelFor(model => model.Message) 
-        </div> 
-        <div class="editor-field"> 
-            @Html.TextBoxFor(model => model.Message) 
-            @Html.ValidationMessageFor(model => model.Message) 
-        </div> 
-        <p> 
-            <input type="submit" value="Send" /> 
-        </p> 
-    </fieldset> 
-}
-@{
-    ViewBag.Title = "Contact";
-}*@
-
 <div class="row">
     <div class="span9">
         <div class="box">
             <h2>Send Me a Message</h2>
 		    <form method="post" action="#" class="form-horizontal">
-			    <!--<legend>Send Me a Message</legend>-->
                 <div class="control-group">
                     <label class="control-label" for="contactname">Your Name<span class="required">*</span></label>
                     <div class="controls">
