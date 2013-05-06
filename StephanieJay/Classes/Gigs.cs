@@ -19,6 +19,7 @@ namespace StephanieJay.Classes
     public class Group
     {
         public string name { get; set; }
+        public DateTime date { get; set; }
         [XmlElement(ElementName = "gig", Type = typeof(Gig))]
         public List<Gig> gigs { get; set; }
     }
@@ -26,7 +27,8 @@ namespace StephanieJay.Classes
     [XmlRootAttribute(ElementName = "gig")]
     public class Gig
     {
-        public string date { get; set; }
+        public string guid { get; set; }
+        public DateTime date { get; set; }
         public string venue { get; set; }
         public string city { get; set; }
         public string country { get; set; }

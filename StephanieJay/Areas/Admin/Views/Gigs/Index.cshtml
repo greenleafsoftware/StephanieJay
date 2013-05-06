@@ -1,34 +1,48 @@
-﻿@model List<RSS.Item>
+﻿@model StephanieJay.Classes.Gigs
            
 @{
-    ViewBag.Title = "Gigs";
+    ViewBag.Title = "Admin - Gigs";
 }
 
-<div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span9">
-        <div class="box">
-            <h2>Edit Gigs</h2>
-            <ul class="box-item-bag">
-
-@foreach (var gigs in Model)
-{
-                <li class="box-item">
-                    <h3>@news.title</h3>
-                    <a href="@news.link">@news.link</a>
-                    <div><span>@news.description</span></div>
-                    <div class="btn-group right">
-                        <a class="btn btn-primary" href="News/Edit/@news.guid"><i class="icon-edit"></i> Edit</a>
-                        <a class="btn btn-danger" href="News/Delete/@news.guid"><i class="icon-minus"></i> Delete</a>
-                    </div>
-                    <div class="clear"></div>
-                </li>
-}
-
-                <li class="box-item">
-                    <a class="btn btn-success" href="News/Create"><i class="icon-plus"></i> Create</a>
-                </li>
-            </ul>
-        </div>
+<div class="row">
+    <div class="span12 box">
+        <h2>Edit Gigs</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date.</th>
+                    <th>Venue.</th>
+                    <th>City.</th>
+                    <th>Country.</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var group in Model.groups)
+            {
+                <tr><td colspan="5">@group.name</td></tr>
+                foreach (var gig in group.gigs)
+                {
+                    <tr>
+                        <td>@gig.date</td>
+                        <td>@gig.venue</td>
+                        <td>@gig.city</td>
+                        <td>@gig.country</td>
+                        <td>
+                            <div class="btn-group right">
+                                <a class="btn btn-primary" href="Gigs/Edit/@gig.guid"><i class="icon-edit"></i> Edit</a>
+                                <a class="btn btn-danger" href="Gigs/Delete/@gig.guid"><i class="icon-minus"></i> Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+        <ul class="box-item-bag">
+            <li class="box-item">
+                <a class="btn btn-success" href="Gigs/Create"><i class="icon-plus"></i> Create</a>
+            </li>
+        </ul>
 	</div>
 </div>

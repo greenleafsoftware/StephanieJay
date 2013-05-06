@@ -3,24 +3,21 @@
     ViewBag.Title = "Admin - Bio";
 }
 
-<div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span9">
-        <div class="box">
-            <h2>Edit Bio</h2>
-            <ul class="box-item-bag">
-            @using (Html.BeginForm("Index", "Bio", FormMethod.Post, new { Class = "form-horizontal" }))
-            {
-                <li class="box-item">
-                <label>Bio Information:</label>
-                    @Html.TextAreaFor(x => x.description, new { Class = "span12", Rows = "10" })
-                </li>
+<div class="row">
+    <div class="span12 box">
+        <h2>Edit Bio</h2>
+        <ul class="box-item-bag">
+        @using (Html.BeginForm("Index", "Bio", FormMethod.Post, new { Class = "form-horizontal" }))
+        {
+            <li class="box-item">
+            <label>Bio Information:</label>
+                @Html.TextAreaFor(x => x.description, new { Class = "span12", Rows = "10" })
+            </li>
 
-                <li class="box-item">
-                    <input id="btnSubmit" type="submit" value="Save" class="btn btn-primary" />
-                </li>
-            }
-            </ul>
-        </div>
-	</div>
+            <li class="box-item">
+                <input id="btnSubmit" type="submit" value="Save" class="btn btn-primary" />
+            </li>
+        }
+        </ul>
+    </div>
 </div>

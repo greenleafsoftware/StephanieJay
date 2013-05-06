@@ -1,32 +1,29 @@
 ﻿@model List<RSS.Item>
            
 @{
-    ViewBag.Title = "News";
+    ViewBag.Title = "Admin - News";
 }
 
-<div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span9">
-        <div class="box">
-            <h2>Edit News</h2>
-            <ul class="box-item-bag">
+<div class="row">
+    <div class="span12 box">
+        <h2>Edit News</h2>
+        <ul class="box-item-bag">
 @foreach (var news in Model)
 {
-                <li class="box-item">
-                    <h3>@news.title</h3>
-                    <a href="@news.link">@news.link</a>
-                    <div><span>@news.description</span></div>
-                    <div class="btn-group right">
-                        <a class="btn btn-primary" href="News/Edit/@news.guid"><i class="icon-edit"></i> Edit</a>
-                        <a class="btn btn-danger" href="News/Delete/@news.guid"><i class="icon-minus"></i> Delete</a>
-                    </div>
-                    <div class="clear"></div>
-                </li>
+            <li class="box-item">
+                <h3>@news.title</h3>
+                <a href="@news.link">@news.link</a>
+                <div><span>@news.description</span></div>
+                <div class="btn-group right">
+                    <a class="btn btn-primary" href="News/Edit/@news.guid"><i class="icon-edit"></i> Edit</a>
+                    <a class="btn btn-danger" href="News/Delete/@news.guid"><i class="icon-minus"></i> Delete</a>
+                </div>
+                <div class="clear"></div>
+            </li>
 }
-                <li class="box-item">
-                    <a class="btn btn-success" href="News/Create"><i class="icon-plus"></i> Create</a>
-                </li>
-            </ul>
-        </div>
-	</div>
+            <li class="box-item">
+                <a class="btn btn-success" href="News/Create"><i class="icon-plus"></i> Create</a>
+            </li>
+        </ul>
+    </div>
 </div>

@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\GigsController.cs" />
     <Compile Include="Classes\Channel.cs" />
     <Compile Include="Classes\Bio.cs" />
     <Compile Include="Classes\Extensions\ModelExtensions.cs" />
@@ -240,7 +241,6 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="App_Data\News.xml" />
@@ -302,10 +302,7 @@
   <ItemGroup>
     <Content Include="Areas\Admin\Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
   </ItemGroup>

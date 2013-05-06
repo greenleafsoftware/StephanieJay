@@ -73,21 +73,18 @@
 
     <div id="nav-wrap">
         <div id="nav">
-            @Html.ActionLink("Home", "Index", "Home", new { area = ""}, null)
-            @Html.ActionLink("Gigs", "Index", "Gigs", new { area = "" }, null)
-            @Html.ActionLink("Gallery", "Index", "Gallery", new { area = "" }, null)
+            @Html.ActionLink("HOME", "Index", "Home", new { area = ""}, null)
+            @Html.ActionLink("GIGS", "Index", "Gigs", new { area = "" }, null)
+            @Html.ActionLink("GALLERY", "Index", "Gallery", new { area = "" }, null)
 @*            @Html.ActionLink("Mixes", "Index", "Mixes")
-*@          @Html.ActionLink("Bio", "Index", "Bio", new { area = "" }, null)
-            @Html.ActionLink("Contact", "Index", "Contact", new { area = "" }, null)
-            @Html.ActionLink("Venues", "Index", "Venues", new { area = "" }, null)
+*@          @Html.ActionLink("BIO", "Index", "Bio", new { area = "" }, null)
+            @Html.ActionLink("CONTACT", "Index", "Contact", new { area = "" }, null)
+            @Html.ActionLink("VENUES", "Index", "Venues", new { area = "" }, null)
         </div>
     </div>
     <div id="main-content">
         <div class="container">
             @RenderBody()
-            <div id="logindisplay">
-                <!--@Html.Partial("_LogOnPartial")-->
-            </div>
         </div>
     </div>
     <div id="footer">

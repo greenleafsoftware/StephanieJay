@@ -1,24 +1,21 @@
 ﻿@{
     ViewBag.Title = "Admin";
 }
-<div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span9">
-        <div class="box">
-            <h2>Admin</h2>
-            <ul class="box-item-bag">
-                <li class="box-item">
-                    @Html.ActionLink("Edit Welcome Message", "Index", "Welcome")
-                <li class="box-item">
-                    @Html.ActionLink("Edit News", "Index", "News")
-                </li>
-                <li class="box-item">
-                    @Html.ActionLink("Edit Bio", "Index", "Bio")
-                </li>
-                <li class="box-item">
-                    @Html.ActionLink("Edit Gigs", "Index", "Gigs")
-                </li>
-            </ul>
-        </div>
-	</div>
+<div class="row">
+    <div class="span12 box">
+        <h2>Admin</h2>
+        <ul class="box-item-bag">
+            <li class="box-item">
+                @Html.ActionLink("Edit Welcome Message", "Index", "Welcome")
+            <li class="box-item">
+                @Html.ActionLink("Edit News", "Index", "News")
+            </li>
+            <li class="box-item">
+                @Html.ActionLink("Edit Bio", "Index", "Bio")
+            </li>
+            <li class="box-item">
+                @Html.ActionLink("Edit Gigs", "Index", "Gigs")
+            </li>
+        </ul>
+    </div>
 </div>
