@@ -90,5 +90,19 @@
       <city>Some Other City</city>
       <country>Some Other Country</country>
     </gig>
+    <gig>
+      <date>2013-01-01T00:00:00</date>
+      <venue>sdfsdfs</venue>
+    </gig>
+  </group>
+  <group>
+    <name>May 2013</name>
+    <date>2013-05-01T00:00:00</date>
+    <gig>
+      <date>2013-05-24T00:00:00</date>
+      <venue>Some Other Venue</venue>
+      <city>Manchester</city>
+      <country>England</country>
+    </gig>
   </group>
 </gigs>

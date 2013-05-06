@@ -127,6 +127,7 @@
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="CSS\bootstrap-responsive.css" />
     <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\datepicker.css" />
     <Content Include="CSS\lightbox.css" />
     <Content Include="CSS\style.css" />
     <Content Include="CSS\reset.css" />
@@ -193,6 +194,7 @@
     <Content Include="Images\Icons\twitter-24x24.png" />
     <Content Include="Images\Icons\twitter-32x32.png" />
     <Content Include="Scripts\bootstrap-carousel.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\cross.cufonfonts.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
