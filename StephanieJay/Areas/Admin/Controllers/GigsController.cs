@@ -67,7 +67,7 @@ namespace StephanieJay.Areas.Admin.Controllers
                 Xml<Gigs>.Save(_xmlPath, _gigs);
                 return RedirectToAction("Index");
             }
-            return View(_gigs);
+            return View(gig);
         }
 
         // GET: /Admin/Gigs/Edit/5

@@ -1,40 +1,53 @@
-﻿@model RSS.Item
+﻿@model StephanieJay.Classes.Gig
 
 @{
     ViewBag.Title = "Create Gigs";
 }
 
-<div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span9">
-        <div class="box">
-            <h2>Create News</h2>
-            @using (Html.BeginForm("Create", "Gigs", FormMethod.Post, new { Class = "form-horizontal" }))
-            {
-                <div class="control-group">
-                    <label class="control-label" for="contactname">Title<span class="required">*</span></label>
-                    <div class="controls">
-                        @Html.TextBoxFor(x => x.title)
-                    </div>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+
+<div class="row">
+    <div class="span12 box">
+        <h2>Create News</h2>
+        @using (Html.BeginForm("Create", "Gigs", FormMethod.Post, new { Class = "form-horizontal" }))
+        {
+            <div class="control-group">
+                <label class="control-label" for="contactname">Date<span class="required">*</span></label>
+                <div class="controls">
+                    @Html.TextBoxFor(x => x.date)
+                    @Html.ValidationMessageFor(g => g.date)
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="email">Link<span class="required">*</span></label>
-                    <div class="controls">
-                        @Html.TextBoxFor(x => x.link)
-                    </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="email">Venue<span class="required">*</span></label>
+                <div class="controls">
+                    @Html.TextBoxFor(x => x.venue)
+                    @Html.ValidationMessageFor(g => g.venue)
                 </div>
-                <div class="control-group">
-                    <label class="control-label" for="message">Description<span class="required">*</span></label>
-                    <div class="controls">
-                        @Html.TextAreaFor(x => x.description)
-                    </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="message">City<span class="required">*</span></label>
+                <div class="controls">
+                    @Html.TextAreaFor(x => x.city)
+                    @Html.ValidationMessageFor(g => g.city)
                 </div>
-                <div class="control-group">
-                    <div class="controls">
-                        <button type="submit" class="btn btn-primary">Create</button>
-                    </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="message">Country<span class="required">*</span></label>
+                <div class="controls">
+                    @Html.TextAreaFor(x => x.country)
+                    @Html.ValidationMessageFor(g => g.country)
                 </div>
-            }
-        </div>
-	</div><!-- form -->
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </div>
+        }
+    </div>
 </div>

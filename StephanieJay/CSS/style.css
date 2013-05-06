@@ -52,7 +52,7 @@ legend { color: White; }
 /*Nav*/
 #nav { margin:0 auto; padding:0px 20px 0px 20px; text-align:center; }
 #nav-wrap { height:40px; background-color:#111; border-top:1px #333 solid; border-bottom:1px #333 solid; }
-#nav a { display:inline-block; padding-left:15px; padding-right:15px; line-height:40px; font-size:14pt;}
+#nav a { display:inline-block; padding-left:18px; padding-right:18px; line-height:40px; font-size:14pt;}
 
 /*Footer*/
 #footer { background:#000 url(../Images/Content/equalizer2.png) repeat-x center bottom; border-top:1px solid #292929; padding-top:30px; height:250px; }
