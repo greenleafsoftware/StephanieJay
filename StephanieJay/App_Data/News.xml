@@ -19,26 +19,15 @@
       <guid>2</guid>
     </item>
     <item>
-      <title>aaaaa</title>
-      <link>xxxxxxxxx</link>
-      <description>xxxxxxxxxxxxxx</description>
-      <guid>3</guid>
+      <title>New News</title>
+      <link>www.google.com</link>
+      <description>This is some extra test text</description>
+      <guid>0be8a9f2-0260-4070-aa82-5e6368ac64df</guid>
     </item>
     <item>
-      <title>bbbbbbbbbbb</title>
-      <description>xxxxxxxxxxxx</description>
-      <guid>4</guid>
-    </item>
-    <item>
-      <title>cccccccccc</title>
-      <link>xxxxxxxxxxxx</link>
-      <description>xxxxxxxxxxxxxxxxxxxxx</description>
-      <guid>5</guid>
-    </item>
-    <item>
-      <title>dddddddddd</title>
-      <description>xxxxxxxxxxxxxxxx</description>
-      <guid>6</guid>
+      <title>Brand new album</title>
+      <description>A new album is currently being worked on.</description>
+      <guid>6db50546-cd69-4815-94ac-31cab5e86cd8</guid>
     </item>
   </channel>
 </rss>
