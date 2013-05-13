@@ -15,7 +15,7 @@
                     <label class="control-label" for="contactname">Title<span class="required">*</span></label>
                     <div class="controls">
                         @Html.TextBoxFor(x => x.title)
-                        @Html.TextBoxFor(x => x.guid)
+                        @Html.HiddenFor(x => x.guid)
                     </div>
                 </div>
                 <div class="control-group">

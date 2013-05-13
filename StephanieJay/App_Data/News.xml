@@ -6,13 +6,6 @@
     <description>The latest information from DJ Stephanie Jay.</description>
     <language>en-gb</language>
     <item>
-      <title>Website Open for Business</title>
-      <link>https://itunes.apple.com/gb/album/hed-kandi-the-mix-2013/id577030945</link>
-      <description>There is a new website online! test</description>
-      <pubDate>Tue, 03 Nov 2012 09:39:21 GMT</pubDate>
-      <guid>1</guid>
-    </item>
-    <item>
       <title>Al's mishaps</title>
       <link>www.alexthepleb.com</link>
       <description>This is a great website of al's mishaps.</description>
@@ -28,6 +21,9 @@
       <title>Brand new album</title>
       <description>A new album is currently being worked on.</description>
       <guid>6db50546-cd69-4815-94ac-31cab5e86cd8</guid>
+    </item>
+    <item>
+      <guid>1</guid>
     </item>
   </channel>
 </rss>
