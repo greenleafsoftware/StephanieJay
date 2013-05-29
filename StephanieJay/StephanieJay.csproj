@@ -306,7 +306,9 @@
   <ItemGroup>
     <Content Include="Areas\Admin\Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App_Data\Gigs.xsd" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
   </ItemGroup>

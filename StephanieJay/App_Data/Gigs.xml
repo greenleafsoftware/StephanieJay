@@ -1,111 +1,91 @@
 <?xml version="1.0"?>
-<gigs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <group>
-    <name>June 2012</name>
-    <date>0001-01-01T00:00:00</date>
-    <gig>
-      <guid>1</guid>
-      <date>2012-06-01T22:16:00</date>
-      <venue>BBC Radio 1's Hackney Weekend</venue>
-      <city>London</city>
-      <country>United Kingdom</country>
-      <guid>1</guid>
-    </gig>
-    <gig>
-      <guid>2</guid>
-      <date>2012-06-02T22:16:00</date>
-      <venue>Rock A Field</venue>
-      <city>Roeser</city>
-      <country>Luxembourg</country>
-    </gig>
-    <gig>
-      <date>2012-06-04T22:16:00</date>
-      <venue>L'Olympia</venue>
-      <city>Paris</city>
-      <country>Fance</country>
-    </gig>
-    <gig>
-      <date>2012-06-07T22:16:00</date>
-      <venue>Columbiahalle</venue>
-      <city>Berlin</city>
-      <country>Germany</country>
-    </gig>
-    <gig>
-      <date>2012-06-09T22:16:00</date>
-      <venue>Rock Wechter</venue>
-      <city>Wechter</city>
-      <country>Belgium</country>
-    </gig>
-    <gig>
-      <date>2012-06-13T22:16:00</date>
-      <venue>Open Air</venue>
-      <city>St. Gallen</city>
-      <country>Switzerland</country>
-    </gig>
-  </group>
-  <group>
-    <name>July 2012</name>
-    <date>0001-01-01T00:00:00</date>
-    <gig>
-      <date>2012-07-01T22:16:00</date>
-      <venue>FuturFestival</venue>
-      <city>Parco Dora</city>
-      <country>Italy</country>
-    </gig>
-    <gig>
-      <date>2012-07-03T22:16:00</date>
-      <venue>Rock in Roma</venue>
-      <city>Rome</city>
-      <country>Italy</country>
-    </gig>
-    <gig>
-      <date>2012-07-08T22:16:00</date>
-      <venue>Wireless Festival</venue>
-      <city>London</city>
-      <country>United Kingdom</country>
-    </gig>
-    <gig>
-      <date>2012-07-10T22:16:00</date>
-      <venue>Rock In Rio</venue>
-      <city>Madrid</city>
-      <country>Spain</country>
-    </gig>
-  </group>
-  <group>
-    <name>December 2013</name>
-    <date>2013-12-01T00:00:00</date>
-    <gig>
-      <date>2013-12-12T00:00:00</date>
-    </gig>
-  </group>
-  <group>
-    <name>January 2013</name>
+<gigs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.w3.org/ Gigs.xsd">
+  <gig>
+    <guid>1</guid>
+    <date>2012-06-01T22:16:00</date>
+    <venue>BBC Radio 1's Hackney Weekend</venue>
+    <city>London</city>
+    <country>United Kingdom</country>
+  </gig>
+  <gig>
+    <guid>2</guid>
+    <date>2012-06-02T22:16:00</date>
+    <venue>Rock A Field</venue>
+    <city>Roeser</city>
+    <country>Luxembourg</country>
+  </gig>
+  <gig>
+    <guid>2</guid>
+    <date>2012-06-04T22:16:00</date>
+    <venue>L'Olympia</venue>
+    <city>Paris</city>
+    <country>Fance</country>
+  </gig>
+  <gig>
+    <date>2012-06-07T22:16:00</date>
+    <venue>Columbiahalle</venue>
+    <city>Berlin</city>
+    <country>Germany</country>
+  </gig>
+  <gig>
+    <date>2012-06-09T22:16:00</date>
+    <venue>Rock Wechter</venue>
+    <city>Wechter</city>
+    <country>Belgium</country>
+  </gig>
+  <gig>
+    <date>2012-06-13T22:16:00</date>
+    <venue>Open Air</venue>
+    <city>St. Gallen</city>
+    <country>Switzerland</country>
+  </gig>
+  <gig>
+    <date>2012-07-01T22:16:00</date>
+    <venue>FuturFestival</venue>
+    <city>Parco Dora</city>
+    <country>Italy</country>
+  </gig>
+  <gig>
+    <date>2012-07-03T22:16:00</date>
+    <venue>Rock in Roma</venue>
+    <city>Rome</city>
+    <country>Italy</country>
+  </gig>
+  <gig>
+    <date>2012-07-08T22:16:00</date>
+    <venue>Wireless Festival</venue>
+    <city>London</city>
+    <country>United Kingdom</country>
+  </gig>
+  <gig>
+    <date>2012-07-10T22:16:00</date>
+    <venue>Rock In Rio</venue>
+    <city>Madrid</city>
+    <country>Spain</country>
+  </gig>
+  <gig>
+    <date>2013-12-12T00:00:00</date>
+  </gig>
+  <gig>
     <date>2013-01-01T00:00:00</date>
-    <gig>
-      <date>2013-01-01T00:00:00</date>
-      <venue>Some Venue</venue>
-      <city>Some City</city>
-      <country>Come Country</country>
-    </gig>
-    <gig>
-      <date>2013-01-02T00:00:00</date>
-      <venue>Some Other Venue</venue>
-      <city>Some Other City</city>
-      <country>Some Other Country</country>
-    </gig>
-    <gig>
-      <date>2013-01-01T00:00:00</date>
-      <venue>sdfsdfs</venue>
-    </gig>
-  </group>
-  <group>
-    <name>May 2013</name>
-    <date>2013-05-01T00:00:00</date>
-    <gig>
-      <date>2013-05-24T00:00:00</date>
-      <venue>Some Other Venue</venue>
-      <city>Manchester</city>
-      <country>England</country>
-    </gig>
-  </group>
+    <venue>Some Venue</venue>
+    <city>Some City</city>
+    <country>Come Country</country>
+  </gig>
+  <gig>
+    <date>2013-01-02T00:00:00</date>
+    <venue>Some Other Venue</venue>
+    <city>Some Other City</city>
+    <country>Some Other Country</country>
+  </gig>
+  <gig>
+    <date>2013-01-01T00:00:00</date>
+    <venue>sdfsdfs</venue>
+  </gig>
+  <gig>
+    <date>2013-05-24T00:00:00</date>
+    <venue>Some Other Venue</venue>
+    <city>Manchester</city>
+    <country>England</country>
+  </gig>
 </gigs>
