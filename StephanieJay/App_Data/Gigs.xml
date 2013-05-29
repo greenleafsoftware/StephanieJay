@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <gigs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<<<<<<< HEAD
   <group>
     <name>June 2012</name>
     <date>0001-01-01T00:00:00</date>
@@ -108,4 +109,29 @@
       <country>England</country>
     </gig>
   </group>
+=======
+  <gigs>
+    <Gig>
+      <guid>c3a2202f-052a-4f56-927d-f4953f090161</guid>
+      <date>2013-05-26T00:00:00</date>
+      <venue>Home</venue>
+      <city>Your's</city>
+      <country>UK</country>
+    </Gig>
+    <Gig>
+      <guid>8b7679b7-c4d3-4eca-b3fa-fae074b03fe8</guid>
+      <date>2013-05-29T00:00:00</date>
+      <venue>Home</venue>
+      <city>Your's</city>
+      <country>UK</country>
+    </Gig>
+    <Gig>
+      <guid>e8256cf8-29f9-4d84-8ff5-619a58e62dc2</guid>
+      <date>2013-05-30T00:00:00</date>
+      <venue>Home</venue>
+      <city>Mine</city>
+      <country>UK</country>
+    </Gig>
+  </gigs>
+>>>>>>> Edit updated and Gigs model
 </gigs>

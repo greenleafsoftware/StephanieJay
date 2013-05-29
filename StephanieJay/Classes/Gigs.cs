@@ -11,19 +11,20 @@ namespace StephanieJay.Classes
     [XmlRootAttribute(ElementName = "gigs")]
     public class Gigs
     {
-        [XmlElement(ElementName = "group", Type = typeof(Group))]
-        public List<Group> groups { get; set; }
-    }
+        //    [XmlElement(ElementName = "group", Type = typeof(Group))]
+        //    public List<Group> groups { get; set; }
+        //}
 
-    [XmlRootAttribute(ElementName = "group")]
-    public class Group
-    {
-        public string name { get; set; }
-        public DateTime date { get; set; }
-        [XmlElement(ElementName = "gig", Type = typeof(Gig))]
+        //[XmlRootAttribute(ElementName = "group")]
+        //public class Group
+        //{
+        //    public string name { get; set; }
+        //    public DateTime date { get; set; }
+        //    [XmlElement(ElementName = "gig", Type = typeof(Gig))]
+        //    public List<Gig> gigs { get; set; }
+        //}
         public List<Gig> gigs { get; set; }
     }
-
     [XmlRootAttribute(ElementName = "gig")]
     public class Gig
     {
