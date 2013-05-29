@@ -18,10 +18,7 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach (var group in Model.groups)
-            {
-                <tr><td colspan="5">@group.name</td></tr>
-                foreach (var gig in group.gigs)
+                @foreach (var gig in Model.gigs)
                 {
                     <tr>
                         <td>@gig.date.ToString("m")</td>
@@ -36,7 +33,6 @@
                         </td>
                     </tr>
                 }
-            }
             </tbody>
         </table>
         <ul class="box-item-bag">

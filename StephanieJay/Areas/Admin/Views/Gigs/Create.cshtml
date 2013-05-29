@@ -36,6 +36,7 @@
                 <label class="control-label" for="email">Venue<span class="required">*</span></label>
                 <div class="controls">
                     @Html.TextBoxFor(x => x.venue)
+                    @Html.TextBoxFor(x => x.guid)
                     @Html.ValidationMessageFor(g => g.venue)
                 </div>
             </div>
