@@ -16,10 +16,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach (var Group in Model.groups)
+                @foreach (var group in Model.gigs.Select(g => new { g.date.Month, g.date.Year }).Distinct().ToList())
                 {
-                    <tr><td colspan="4">@Group.name</td></tr>
-                    foreach (var Gig in Group.gigs)
+                    <tr><td colspan="4">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(group.Month) @group.Year</td></tr>
+                    foreach (var Gig in Model.gigs.Where(g => g.date.Year == group.Year && g.date.Month == group.Month))
                     {
                         <tr>
                             <td>@Gig.date</td>
