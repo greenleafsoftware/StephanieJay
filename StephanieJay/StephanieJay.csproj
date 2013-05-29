@@ -245,7 +245,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="App_Data\News.xml" />
+    <Content Include="App_Data\News.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\WelcomeMessage.xml">
       <SubType>Designer</SubType>
     </Content>

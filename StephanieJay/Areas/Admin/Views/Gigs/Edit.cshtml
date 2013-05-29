@@ -1,32 +1,45 @@
 ﻿@model StephanieJay.Classes.Gig
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Edit Gig";
+||||||| merged common ancestors
+    ViewBag.Title = "Edit News";
+=======
+    ViewBag.Title = "Edit Gigs";
+>>>>>>> 5469ca39c0119bf3fd995deb345c72a9a4f81d25
 }
 
 <div class="row-fluid">
     <div class="span2"></div>
     <div class="span9">
         <div class="box">
-            <h2>Edit News</h2>
-            @using (Html.BeginForm("Edit", "News", new { news = Model }, FormMethod.Post, new { Class = "form-horizontal" }))
+            <h2>Edit Gigs</h2>
+            @using (Html.BeginForm("Edit", "Gigs", new { gigs = Model }, FormMethod.Post, new { Class = "form-horizontal" }))
             {
                 <div class="control-group">
                     <label class="control-label" for="contactname">Title<span class="required">*</span></label>
                     <div class="controls">
-                        @Html.TextBoxFor(x => x.title)
+                        @Html.TextBoxFor(x => x.date)
+                        @Html.HiddenFor(x => x.guid)
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="email">Link<span class="required">*</span></label>
                     <div class="controls">
-                        @Html.TextBoxFor(x => x.link)
+                        @Html.TextBoxFor(x => x.venue)
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="message">Description<span class="required">*</span></label>
                     <div class="controls">
-                        @Html.TextAreaFor(x => x.description)
+                        @Html.TextAreaFor(x => x.city)
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="message">Description<span class="required">*</span></label>
+                    <div class="controls">
+                        @Html.TextAreaFor(x => x.country)
                     </div>
                 </div>
                 <div class="control-group">

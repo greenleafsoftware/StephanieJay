@@ -43,6 +43,7 @@ namespace StephanieJay.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                news.guid = Guid.NewGuid().ToString();
                 _newsRss.channel.items.Add(news);
                 Xml<Rss>.Save(_xmlPath, _newsRss);
                 return RedirectToAction("Index");
@@ -63,16 +64,16 @@ namespace StephanieJay.Areas.Admin.Controllers
 
         // POST: /News/Edit/5
         [HttpPost]
-        public ActionResult Edit(Item news)
+        public ActionResult Edit(Item model)
         {
             if (ModelState.IsValid)
             {
-                _newsRss.channel.items.RemoveAll(x => x.guid == news.guid);
-                _newsRss.channel.items.Add(news);
+                _newsRss.channel.items.RemoveAll(x => x.guid == model.guid);
+                _newsRss.channel.items.Add(model);
                 Xml<Rss>.Save(_xmlPath, _newsRss);
                 return RedirectToAction("Index");
             }
-            return View(news);
+            return View(model);
         }
 
         // GET: /News/Delete/5

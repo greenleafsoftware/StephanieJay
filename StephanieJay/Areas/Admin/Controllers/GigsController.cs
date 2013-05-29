@@ -83,14 +83,14 @@ namespace StephanieJay.Areas.Admin.Controllers
 
         // POST: /News/Edit/5
         [HttpPost]
-        public ActionResult Edit(Gig gig)
+        public ActionResult Edit(Gig model)
         {
             if (ModelState.IsValid)
             {
-                /*_gigs.channel.items.RemoveAll(x => x.guid == news.guid);
-                _newsRss.channel.items.Add(news);
+                _gigs.xxxx.RemoveAll(x => x.guid == model.guid);
+                _gigs.xxxx.gigs.Add(model);
                 Xml<Rss>.Save(_xmlPath, _gigs);
-                return RedirectToAction("Index");*/
+                return RedirectToAction("Index");
             }
             return RedirectToAction("Index", "Admin");
         }
