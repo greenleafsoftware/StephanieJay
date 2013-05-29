@@ -4,12 +4,14 @@
     <name>June 2012</name>
     <date>0001-01-01T00:00:00</date>
     <gig>
+      <guid>1</guid>
       <date>2012-06-01T22:16:00</date>
       <venue>BBC Radio 1's Hackney Weekend</venue>
       <city>London</city>
       <country>United Kingdom</country>
     </gig>
     <gig>
+      <guid>2</guid>
       <date>2012-06-02T22:16:00</date>
       <venue>Rock A Field</venue>
       <city>Roeser</city>
